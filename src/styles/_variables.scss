@@ -1,2 +1,18 @@
-$primary-color: #3498db;
-$font-size: 16px;
+html[data-theme='dark'] {
+  --bg-color: #222;
+  --bg-lighter-color: #323232;
+  --title-color: #EEE;
+  --subtitle-color: #DEDEDE;
+  --main-color: #66BB6A;
+}
+
+html[data-theme='light'] {
+  --bg-color: #EEE;
+  --bg-lighter-color: #DEDEDE;
+  --title-color: #222;
+  --subtitle-color: #555;
+  --main-color: #66BB6A;
+}
+
+
+
