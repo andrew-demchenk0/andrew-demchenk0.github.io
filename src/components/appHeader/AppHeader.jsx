@@ -3,7 +3,7 @@ import { useTheme } from 'hooks/themeHook.js';
 import { useTranslation } from 'react-i18next';
 import Logo from 'icons/logo/Logo.jsx';
 
-import 'appHeader.scss';
+import './appHeader.scss';
 import { NavLink } from 'react-router-dom';
 import { FiSun } from 'react-icons/fi';
 import { BiMoon } from 'react-icons/bi';
