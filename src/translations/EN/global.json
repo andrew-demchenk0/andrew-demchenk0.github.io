@@ -1,6 +1,8 @@
 {
   "h1": "Hello 👋, My name is Andrii. I`m studying to become a web developer",
-  "title": {
-    "msg": "Portfolio"
-  }
+  "home": "Home",
+  "projects": "Projects",
+  "about": "About",
+  "resume": "Resume",
+  "techSkills": "Tech skills"
 }

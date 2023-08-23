@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Logo from '../../icons/logo/Logo.jsx';
 
 import './appHeader.scss';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { FiSun } from 'react-icons/fi';
 import { BiMoon } from 'react-icons/bi';
 
@@ -20,7 +20,6 @@ const AppHeader = () => {
   };
 
   const language = localStorage.getItem('lng');
-
   const handleChangeLanguage = () => {
     const newLanguage = language === 'en' ? 'ua' : 'en';
     i18n.changeLanguage(newLanguage);
@@ -28,32 +27,60 @@ const AppHeader = () => {
 
   };
   return (
-    <div>
-      <Link to="/">
-        <Logo className="logo" color="var(--title-color)" />
-      </Link>
+    <div className='header'>
+      <NavLink to="/" className="header__logo" >
+        <Logo color="var(--title-color)" />
+      </NavLink>
 
-      <label className="switcher">
-        <input
-          className="input"
-          type="checkbox"
-          checked={currentTheme === 'dark'}
-          onChange={changeTheme}
-        />
-        <FiSun className="icon icon-sun" />
-        <BiMoon className="icon icon-moon" />
-      </label>
-      <label className="switcher">
-        <input
-          type="checkbox"
-          className="input"
-          onChange={handleChangeLanguage}
-        />
-        <span className="langBox">{language === 'ua' ? 'EN' : 'UA'}</span>
-      </label>
-      <h1 className="animate__animated animate__bounce header">An animated element</h1>
-      <div>{t('h1')}</div>
-      <div>{t('title.msg')}</div>
+      <ul className='header__nav'>
+        <li className='header__nav-item'>
+          <NavLink to="/" style={({isActive}) => ({color: isActive ? 'var(--main-color)' : 'inherit'})}>
+            {t('home')}
+          </NavLink>
+        </li>
+        <li className='header__nav-item'>
+          <NavLink to="/projects" style={({isActive}) => ({color: isActive ? 'var(--main-color)' : 'inherit'})}>
+            {t('projects')}
+          </NavLink>
+        </li>
+        <li className='header__nav-item'>
+          <NavLink to="/about" style={({isActive}) => ({color: isActive ? 'var(--main-color)' : 'inherit'})}>
+            {t('about')}
+          </NavLink>
+        </li>
+        <li className='header__nav-item'>
+          <NavLink to="/resume" style={({isActive}) => ({color: isActive ? 'var(--main-color)' : 'inherit'})}>
+            {t('resume')}
+          </NavLink>
+        </li>
+        <li className='header__nav-item'>
+          <NavLink to="/tech-skills" style={({isActive}) => ({color: isActive ? 'var(--main-color)' : 'inherit'})}>
+            {t('techSkills')}
+          </NavLink>
+        </li>
+      </ul>
+
+      <div className='switcher-wrapper'>
+        <label className="switcher">
+          <input
+            className="switcher__input"
+            type="checkbox"
+            checked={currentTheme === 'dark'}
+            onChange={changeTheme}
+          />
+          <FiSun className="switcher__icon-sun" />
+          <BiMoon className="switcher__icon-moon" />
+        </label>
+
+        <label className="switcher">
+          <input
+            type="checkbox"
+            className="switcher__input"
+            onChange={handleChangeLanguage} />
+          <span className="switcher__lang">{language === 'ua' ? 'EN' : 'UA'}</span>
+        </label>
+      </div>
+
     </div>
   );
 };

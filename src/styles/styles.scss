@@ -42,7 +42,8 @@ a {
   display: inline-block;
 
   &:hover {
-    text-decoration: var(--main-color);
+    text-decoration: underline;
+
     color: inherit;
   }
 }
@@ -59,7 +60,7 @@ main {
 }
 
 .app {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
   display: flex;
