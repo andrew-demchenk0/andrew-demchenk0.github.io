@@ -23,7 +23,7 @@ const Logo = props => {
 
 Logo.propTypes = {
   color: PropTypes.string.isRequired,
-  style: PropTypes.string.isRequired,
+  style: PropTypes.object,
 };
 
 export default Logo;
