@@ -1,6 +1,6 @@
 import i18next from 'i18next';
-import global_en from '../translations/EN/global.json';
-import global_ua from '../translations/UA/global.json';
+import global_en from 'translations/EN/global.json';
+import global_ua from 'translations/UA/global.json';
 import { initReactI18next } from 'react-i18next';
 
 const storedLanguage = localStorage.getItem('lng');

@@ -1,4 +1,4 @@
-import logo from '../logo/site-logo.svg'
+import logo from 'src/icons/logo/site-logo.svg'
 
 const Icons = {
   logo,
