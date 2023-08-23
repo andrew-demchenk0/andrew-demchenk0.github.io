@@ -1,0 +1,17 @@
+@import 'src/styles/variables';
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  &__item{
+    color: var(--subtitle-color);
+    font-size: 17px;
+    font-weight: 400;
+    &:hover {
+      color: var(--title-color);
+      text-decoration: underline;
+    }
+  }
+}
