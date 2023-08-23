@@ -23,7 +23,7 @@ const AppFooter = () => {
           <a href='https://www.linkedin.com/in/andrii-demchenko-21334125a/'
              target='_blank'
              rel="noreferrer">
-            {t('footer.autor')}
+            {t('footer.author')}
           </a>
         </div>
         <div className="footer__info-item">

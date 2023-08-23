@@ -4,6 +4,8 @@
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 10;
+  background: var(--bg-color);
   padding: 5px 20px;
   display: flex;
   flex-direction: row;

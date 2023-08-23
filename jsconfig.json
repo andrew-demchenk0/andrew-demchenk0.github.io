@@ -6,6 +6,7 @@
       "components/*": ["components/*"],
       "hooks/*": ["hooks/*"],
       "icons/*": ["icons/*"],
+      "images/*": ["images/*"],
       "pages/*": ["pages/*"],
       "styles/*": ["styles/*"],
       "translations/*": ["translations/*"]

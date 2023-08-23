@@ -9,6 +9,29 @@
   "footer": {
     "copyright": "Авторські права © 2023 ",
     "create": "Створено за допомогою ",
-    "autor": "Андрій Демченко"
+    "author": "Андрій Демченко"
+  },
+  "pageTitle": {
+    "projects": "Проєкти",
+    "about": "Про мене"
+
+  },
+  "aboutPage": {
+    "greeting": {
+      "title": "Привіт 👋, Я Андрій",
+      "description": "Фронтенд розробник"
+    },
+    "about": {
+      "title": "Про мене",
+      "description": "A professionally growing and motivated individual,ready to actively learn and develop. I prefer high quality standards and always strive to achieve the best results in my work. I have a wide range of plans and ambitions in life, which drives my motivation and persistence in achieving my goals. Iam convinced that interaction and cooperation with colleagues is the key to success, so l can maintain a positive and favorable working atmosphere. At the same time, Iam open to the opinions of others, but fi necessary,I am ready to defend my position"
+    },
+    "contact": {
+      "title": "Давай працювати разом",
+      "description": "Напиши мені"
+    },
+    "resume": {
+      "title": "Дізнайтеся більше про мене",
+      "description": "Подивитися резюме"
+    }
   }
 }
