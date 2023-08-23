@@ -1,0 +1,16 @@
+@import 'src/styles/variables';
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  &-item {
+    font-size: 20px;
+    color: var(--subtitle-color);
+
+    &:hover {
+      color: var(--main-color);
+    }
+  }
+}

@@ -1,1 +1,41 @@
 @import 'src/styles/variables';
+
+.footer {
+  padding: 5px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    &-item {
+      color: var(--subtitle-color);
+      font-size: 13px;
+    }
+  }
+}
+
+.react-icon {
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: translateY(3px) rotate(0);
+  }
+  100% {
+    transform: translateY(3px) rotate(360deg);
+  }
+}

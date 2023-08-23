@@ -4,5 +4,11 @@
   "projects": "Projects",
   "about": "About",
   "resume": "Resume",
-  "techSkills": "Tech skills"
+  "techSkills": "Tech skills",
+
+  "footer": {
+    "copyright": "Copyright © 2023 by ",
+    "create": "Powered by ",
+    "autor": "Andrii Demchenko"
+  }
 }
