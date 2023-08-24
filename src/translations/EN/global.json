@@ -18,19 +18,23 @@
   "aboutPage": {
     "greeting": {
       "title": "Hello 👋, My name is Andri",
-      "description": "Frontend developer"
+      "subtitle": "Frontend developer"
     },
     "about": {
       "title": "About me",
       "description": "A professionally growing and motivated individual,ready to actively learn and develop. I prefer high quality standards and always strive to achieve the best results in my work. I have a wide range of plans and ambitions in life, which drives my motivation and persistence in achieving my goals. Iam convinced that interaction and cooperation with colleagues is the key to success, so l can maintain a positive and favorable working atmosphere. At the same time, Iam open to the opinions of others, but fi necessary,I am ready to defend my position"
     },
+    "education": {
+      "title": "Education",
+      "subtitle": "See my Diplomas and Certificates"
+    },
     "contact": {
       "title": "Let`s work together",
-      "description": "Get in touch now"
+      "subtitle": "Get in touch now"
     },
     "resume": {
       "title": "Learn more about me",
-      "description": "See my resume"
+      "subtitle": "See my resume"
     }
   }
 

@@ -37,7 +37,7 @@ const Tile = props => {
     <>
       {(icon && linkIcon) && renderTileSmall()}
       {(className && title && subtitle) && renderTileMedium()}
-      {(icon && linkIcon && className && title && subtitle) && renderTileLarge()}
+      {(linkIcon && className && title && subtitle) && renderTileLarge()}
     </>
   );
 };
@@ -46,8 +46,8 @@ Tile.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
   className: PropTypes.string,
-  icon: PropTypes.any, /////...
-  linkIcon: PropTypes.any, /////....
+  icon: PropTypes.object,
+  linkIcon: PropTypes.object,
 };
 
 export default Tile;

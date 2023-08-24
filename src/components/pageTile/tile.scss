@@ -5,6 +5,9 @@
   padding: 20px;
   background: var(--bg-lighter-color);
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
   gap: 20px;
   &-sm {
     align-items: center;
@@ -16,7 +19,7 @@
 
     &__linkIcon {
       position: absolute;
-      font-size: 5vw;
+      font-size: 3vw;
       color: var(--main-color);
       bottom: 20px;
       right: 20px;
@@ -24,10 +27,6 @@
   }
 
   &-md {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-
     &__title {
 
     }
@@ -38,17 +37,15 @@
   }
 
   &-lg {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
     &__wrapper {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+      width: 100%;
     }
     &__icon {
-      font-size: 7vw;
+      font-size: 5vw;
     }
     &__title {
 
@@ -58,8 +55,8 @@
     }
     &__linkIcon {
       color: var(--main-color);
-
-      font-size: 5vw;
+      align-self: flex-end;
+      font-size: 3vw;
     }
   }
 }
