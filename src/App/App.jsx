@@ -12,6 +12,7 @@ import About from 'pages/about/About.jsx';
 import Projects from 'pages/projects/Projects.jsx';
 import Resume from 'pages/resume/Resume.jsx';
 import Skills from 'pages/skills/Skills.jsx';
+import Page404 from 'pages/404/404.jsx';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
               <Route exact path="/projects" element={<Projects />} />
               <Route exact path="/resume" element={<Resume />} />
               <Route exact path="/tech-skills" element={<Skills />} />
+              <Route path="*" element={<Page404 />} />
             </Routes>
           </Suspense>
         </main>
