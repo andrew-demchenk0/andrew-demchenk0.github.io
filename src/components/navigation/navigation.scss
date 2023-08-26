@@ -5,10 +5,11 @@
   flex-direction: row;
   gap: 20px;
 
-  &__item{
+  &__item {
     color: var(--subtitle-color);
     font-size: $navigation-link;
     font-weight: 400;
+
     &:hover {
       color: var(--title-color);
       text-decoration: underline;

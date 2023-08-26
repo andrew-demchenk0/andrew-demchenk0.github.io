@@ -9,11 +9,24 @@
   align-items: flex-start;
   justify-content: flex-end;
   gap: 20px;
+  &-icon__tile {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+  &:hover .tile__link-icon {
+    color: var(--main-color);
+    transform: rotate(0);
+  }
 
   &__wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
   }
 
   &__title {
@@ -42,22 +55,26 @@
   &__icon {
     font-size: 5vw;
     color: var(--main-color);
+
     &-lg {
       font-size: 10vw;
+      color: var(--main-color);
     }
   }
 
-  &__link-icon {
-    font-size: 3vw;
-    margin-left: auto;
-    align-self: flex-end;
-  }
-
-  //&__linkIcon {
-  //  position: absolute;
+  //&__link-icon {
   //  font-size: 3vw;
-  //  color: var(--main-color);
-  //  bottom: 20px;
-  //  right: 20px;
+  //  margin-left: auto;
+  //  color: var(--title-color);
+  //  transform: rotate(-45deg);
   //}
+
+  &__link-icon {
+    position: absolute;
+    font-size: 3vw;
+    color: var(--title-color);
+    bottom: 20px;
+    right: 20px;
+    transform: rotate(-45deg);
+  }
 }

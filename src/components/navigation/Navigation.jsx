@@ -7,28 +7,38 @@ const Navigation = () => {
 
   return (
     <ul className='navigation'>
-      <li className='navigation__item'>
-        <NavLink to="/" style={({isActive}) => ({color: isActive ? 'var(--main-color)' : 'inherit'})}>
-          {t('home')}
+      <li>
+        <NavLink to="/"
+                 className='navigation__item'
+                 style={({isActive}) => ({color: isActive ? 'var(--main-color)' : 'var(--subtitle-color)'})}>
+                 {t('home')}
         </NavLink>
       </li>
-      <li className='navigation__item'>
-        <NavLink to="/projects" style={({isActive}) => ({color: isActive ? 'var(--main-color)' : 'inherit'})}>
+      <li>
+        <NavLink to="/projects"
+                 className='navigation__item'
+                 style={({isActive}) => ({color: isActive ? 'var(--main-color)' : 'var(--subtitle-color)'})}>
           {t('projects')}
         </NavLink>
       </li>
-      <li className='navigation__item'>
-        <NavLink to="/about" style={({isActive}) => ({color: isActive ? 'var(--main-color)' : 'inherit'})}>
+      <li>
+        <NavLink to="/about"
+                 className='navigation__item'
+                 style={({isActive}) => ({color: isActive ? 'var(--main-color)' : 'var(--subtitle-color)'})}>
           {t('about')}
         </NavLink>
       </li>
-      <li className='navigation__item'>
-        <NavLink to="/resume" style={({isActive}) => ({color: isActive ? 'var(--main-color)' : 'inherit'})}>
+      <li>
+        <NavLink to="/resume"
+                 className='navigation__item'
+                 style={({isActive}) => ({color: isActive ? 'var(--main-color)' : 'var(--subtitle-color)'})}>
           {t('resume')}
         </NavLink>
       </li>
-      <li className='navigation__item'>
-        <NavLink to="/tech-skills" style={({isActive}) => ({color: isActive ? 'var(--main-color)' : 'inherit'})}>
+      <li>
+        <NavLink to="/tech-skills"
+                 className='navigation__item'
+                 style={({isActive}) => ({color: isActive ? 'var(--main-color)' : 'var(--subtitle-color)'})}>
           {t('techSkills')}
         </NavLink>
       </li>
