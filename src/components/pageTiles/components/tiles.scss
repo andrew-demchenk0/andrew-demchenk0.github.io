@@ -9,6 +9,7 @@
   align-items: flex-start;
   justify-content: flex-end;
   gap: 20px;
+
   &-icon__tile {
     align-items: center;
     justify-content: center;
@@ -17,15 +18,17 @@
   &:hover {
     text-decoration: none;
   }
+
   &:hover .tile__link-icon {
     color: var(--main-color);
     transform: rotate(0);
+
   }
 
   &__wrapper {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: end;
     justify-content: space-between;
     width: 100%;
   }
@@ -33,6 +36,7 @@
   &__title {
     font-size: $title;
     color: var(--title-color);
+
     &-special {
       font-size: $special-text;
       color: var(--main-color);
@@ -47,6 +51,7 @@
   &__image {
     &-photo {
       width: 100%;
+      height: clamp(280px, 5vw, 300px);
 
       img {
         width: 100%;
@@ -58,21 +63,24 @@
   }
 
   &__icon {
-    font-size: 5vw;
+    font-size: $tile-icon;
     color: var(--main-color);
 
     &-lg {
-      font-size: 10vw;
+      font-size: $social-tile-icon;
       color: var(--main-color);
     }
   }
 
   &__link-icon {
-    position: absolute;
-    font-size: 3vw;
+    font-size: $arrow-icon-link;
     color: var(--subtitle-color);
-    bottom: 20px;
-    right: 20px;
     transform: rotate(-45deg);
+
+    &__absolute {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+    }
   }
 }

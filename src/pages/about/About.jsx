@@ -40,7 +40,7 @@ const About = () => {
 
         <IconTaleLink className={'tile tile-icon__tile about__tile5 animate__animated  animate__slideInLeft'}
                       icon={<FaLinkedin/>}
-                      linkIcon={<TbCircleArrowRight className='tile__link-icon'/>}
+                      linkIcon={<TbCircleArrowRight className='tile__link-icon tile__link-icon__absolute'/>}
                       link={'https://www.linkedin.com/in/andrii-demchenko-21334125a/'}/>
 
         <TextTileLink className={'tile about__tile6 animate__animated  animate__slideInRight'}
