@@ -67,14 +67,23 @@ const Tile = props => {
       </div>
     );
   };
+
+  const content = (image && alt) && renderImageTale() ||
+    (icon && linkIcon) && renderIconLinkTale() ||
+    (title && subtitle) && renderTitleSubtitleTale() ||
+    (title && subtitle && linkIcon) && renderTitleSubtitleLinkIndicatorTale() ||
+    (icon && title && subtitle && linkIcon) && renderIconTitleSubtitleLinkTale() ||
+    (image && alt && title && subtitle && linkIcon) && renderImageTitleSubtitleLinkTale();
+  console.log('content', content)
   return (
     <>
-      {(image && alt) && renderImageTale()}
-      {(icon && linkIcon) && renderIconLinkTale()}
-      {(title && subtitle) && renderTitleSubtitleTale()}
-      {(title && subtitle && linkIcon) && renderTitleSubtitleLinkIndicatorTale()}
-      {(icon && title && subtitle && linkIcon) && renderIconTitleSubtitleLinkTale()}
-      {(image && alt && title && subtitle && linkIcon) && renderImageTitleSubtitleLinkTale()}
+      {/*{(image && alt) && renderImageTale()}*/}
+      {/*{(icon && linkIcon) && renderIconLinkTale()}*/}
+      {/*{(title && subtitle) && renderTitleSubtitleTale()}*/}
+      {/*{(title && subtitle && linkIcon) && renderTitleSubtitleLinkIndicatorTale()}*/}
+      {/*{(icon && title && subtitle && linkIcon) && renderIconTitleSubtitleLinkTale()}*/}
+      {/*{(image && alt && title && subtitle && linkIcon) && renderImageTitleSubtitleLinkTale()}*/}
+      {content}
     </>
   );
 };

@@ -1,4 +1,4 @@
-import Logo from 'icons/logo/Logo.jsx';
+import Logo from '../../assets/icons/logo/Logo.jsx';
 import Navigation from 'components/navigation/Navigation.jsx';
 import { FaReact } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';

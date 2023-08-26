@@ -1,4 +1,4 @@
-import Logo from 'icons/logo/Logo.jsx';
+import Logo from '../../assets/icons/logo/Logo.jsx';
 import Navigation from 'components/navigation/Navigation.jsx';
 import ThemeSwitcher from 'components/switchers/ThemeSwitcher.jsx';
 import LangSwitcher from 'components/switchers/LangSwitcher.jsx';
