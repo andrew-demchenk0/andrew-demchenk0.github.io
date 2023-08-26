@@ -27,11 +27,16 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
   }
 
   &__title {
     font-size: $title;
     color: var(--title-color);
+    &-special {
+      font-size: $special-text;
+      color: var(--main-color);
+    }
   }
 
   &__subtitle {
@@ -62,17 +67,10 @@
     }
   }
 
-  //&__link-icon {
-  //  font-size: 3vw;
-  //  margin-left: auto;
-  //  color: var(--title-color);
-  //  transform: rotate(-45deg);
-  //}
-
   &__link-icon {
     position: absolute;
     font-size: 3vw;
-    color: var(--title-color);
+    color: var(--subtitle-color);
     bottom: 20px;
     right: 20px;
     transform: rotate(-45deg);

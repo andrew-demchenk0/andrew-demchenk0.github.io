@@ -23,19 +23,19 @@
     },
     "about": {
       "title": "Про мене",
-      "description": "A professionally growing and motivated individual,ready to actively learn and develop. I prefer high quality standards and always strive to achieve the best results in my work. I have a wide range of plans and ambitions in life, which drives my motivation and persistence in achieving my goals. Iam convinced that interaction and cooperation with colleagues is the key to success, so l can maintain a positive and favorable working atmosphere. At the same time, Iam open to the opinions of others, but fi necessary,I am ready to defend my position"
+      "description": "Професійно зростаюча та мотивована особистість, готовий активно вчитися та розвиватися. Я віддаю перевагу високим стандартам якості і завжди прагну досягти найкращих результатів у своїй роботі. У мене є широкий спектр планів та амбіцій у житті, що керує моєю мотивацією та наполегливістю в досягненні моїх цілей. Переконаний, що взаємодія та співпраця з колегами є запорукою успіху, тому можу підтримувати позитивну та сприятливу робочу атмосферу. При цьому я відкритий до думки інших, але при необхідності готовий відстоювати свою позицію"
     },
     "education": {
       "title": "Освіта",
       "subtitle": "Тисни щоб подивитися Дипломи та Сертифікати"
     },
     "contact": {
-      "title": "Давай працювати разом",
-      "subtitle": "Напиши мені"
+      "title": "Зв'яжіться зараз",
+      "subtitle": "Давай працювати разом "
     },
     "resume": {
-      "title": "Дізнайтеся більше про мене",
-      "subtitle": "Подивитися резюме"
+      "title": "Подивитися резюме",
+      "subtitle": "Дізнайтеся більше про мене"
     }
   }
 }

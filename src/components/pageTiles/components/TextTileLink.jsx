@@ -7,9 +7,9 @@ const TextTileLink = props => {
 
   return (
     <NavLink to={linkTo} className={className}>
-      <h2 className="tile__title">{title}</h2>
+      <p className="tile__subtitle">{subtitle}</p>
       <div className="tile__wrapper">
-        <p className="tile__subtitle">{subtitle}</p>
+        <h2 className="tile__title-special">{title}</h2>
         {linkIcon}
       </div>
     </NavLink>

@@ -2,7 +2,7 @@ html[data-theme='dark'] {
   --bg-color: #222;
   --bg-lighter-color: #323232;
   --title-color: #EEE;
-  --subtitle-color: #DEDEDE;
+  --subtitle-color: #C7C7C7;
   --main-color: #66BB6A;
 }
 
@@ -17,5 +17,5 @@ html[data-theme='light'] {
 $title: clamp(12px, 5vw, 24px);
 $subtitle: clamp(8px, 3vw, 16px);
 $description: clamp(7px, 2.5vw, 14px);
-$special-text: clamp(9px, 4vw, 18px);
+$special-text: clamp(12px, 5vw, 48px);
 $navigation-link: clamp(8px, 3vw, 16px);
