@@ -14,5 +14,8 @@ html[data-theme='light'] {
   --main-color: #66BB6A;
 }
 
-
-
+$title: clamp(12px, 5vw, 24px);
+$subtitle: clamp(8px, 3vw, 16px);
+$description: clamp(7px, 2.5vw, 14px);
+$special-text: clamp(9px, 4vw, 18px);
+$navigation-link: clamp(8px, 3vw, 16px);

@@ -14,44 +14,37 @@ const About = () => {
     <>
       <PageTitle text={t('pageTitle.about')} className='page-title animate__animated animate__fadeInDown' />
       <section className='about'>
-        <Tile className="about__photo about__tile1 animate__animated  animate__slideInLeft"
+        <Tile className="tile__image-photo about__tile1 animate__animated  animate__slideInLeft"
               image={AboutPhoto}
-              alt={'Author Photo'}>
-        </Tile>
+              alt={'Author Photo'} />
 
         <Tile className={'tile about__tile2 animate__animated  animate__slideInRight'}
               title={t('aboutPage.greeting.title')}
-              subtitle={t('aboutPage.greeting.subtitle')}>
-        </Tile>
+              subtitle={t('aboutPage.greeting.subtitle')} />
 
         <Tile className={'tile about__tile3 animate__animated  animate__slideInLeft'}
               title={t('aboutPage.about.title')}
-              subtitle={t('aboutPage.about.description')}>
-        </Tile>
+              subtitle={t('aboutPage.about.description')} />
 
         <Tile className={'tile tile-lg about__tile4 animate__animated  animate__slideInRight'}
               icon={<FaUniversity />} title={t('aboutPage.education.title')}
               subtitle={t('aboutPage.education.subtitle')}
-              linkIcon={<TbCircleArrowRight />}>
-        </Tile>
+              linkIcon={<TbCircleArrowRight />} />
 
         <Tile className={'tile tile-sm about__tile5 animate__animated  animate__slideInLeft'}
               icon={<FaLinkedin />}
-              linkIcon={<TbCircleArrowRight />}>
-        </Tile>
+              linkIcon={<TbCircleArrowRight />} />
 
         <Tile className={'tile tile-lg about__tile6 animate__animated  animate__zoomIn'}
               title={t('aboutPage.contact.title')}
               subtitle={t('aboutPage.contact.subtitle')}
-              linkIcon={<TbCircleArrowRight />}>
-        </Tile>
+              linkIcon={<TbCircleArrowRight />} />
 
         <Tile className={'tile tile-lg about__tile7 animate__animated  animate__slideInRight'}
               icon={<BsPersonVcard />}
               title={t('aboutPage.resume.title')}
               subtitle={t('aboutPage.resume.subtitle')}
-              linkIcon={<TbCircleArrowRight />}>
-        </Tile>
+              linkIcon={<TbCircleArrowRight />} />
       </section>
     </>
   );

@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
 import './tile.scss';
+
 const Tile = props => {
   const { image, alt, className, icon, title, subtitle, linkIcon } = props;
 
@@ -10,12 +11,12 @@ const Tile = props => {
         <img src={image} alt={alt}/>
       </div>
     );
-  }
+  };
   const renderIconLinkTale = () => {
     return (
       <div className={className}>
-        <div className='tile-sm__icon'>{icon}</div>
-        <div className="tile-sm__linkIcon">{linkIcon}</div>
+        <div className="tile__icon-lg">{icon}</div>
+        <div className="tile__link-icon">{linkIcon}</div>
       </div>
     );
   };
@@ -23,8 +24,8 @@ const Tile = props => {
   const renderTitleSubtitleTale = () => {
     return (
       <div className={className}>
-        <div className="tile-md__title">{title}</div>
-        <div className="tile-md__subtitle">{subtitle}</div>
+        <h2 className="tile__title">{title}</h2>
+        <p className="tile__subtitle">{subtitle}</p>
       </div>
     );
   };
@@ -32,10 +33,10 @@ const Tile = props => {
   const renderTitleSubtitleLinkIndicatorTale = () => {
     return (
       <div className={className}>
-        <div className="tile-md__title">{title}</div>
-        <div className='tile-lg__wrapper'>
-          <div className="tile-lg__subtitle">{subtitle}</div>
-          <div className="tile-lg__linkIcon">{linkIcon}</div>
+        <h2 className="tile__title">{title}</h2>
+        <div className="tile__wrapper">
+          <p className="tile__subtitle">{subtitle}</p>
+          <div className="tile__link-icon">{linkIcon}</div>
         </div>
       </div>
     );
@@ -44,11 +45,11 @@ const Tile = props => {
   const renderImageTitleSubtitleLinkTale = () => {
     return (
       <div className={className}>
-        <img src={image} alt={alt}/>
-        <div className="tile-lg__title">{title}</div>
-        <div className='tile-lg__wrapper'>
-          <div className="tile-lg__subtitle">{subtitle}</div>
-          <div className="tile-lg__linkIcon">{linkIcon}</div>
+        <img className="tile__image" src={image} alt={alt}/>
+        <h2 className="tile__title">{title}</h2>
+        <div className="tile__wrapper">
+          <p className="tile__subtitle">{subtitle}</p>
+          <div className="tile__link-icon">{linkIcon}</div>
         </div>
       </div>
     );
@@ -57,11 +58,11 @@ const Tile = props => {
   const renderIconTitleSubtitleLinkTale = () => {
     return (
       <div className={className}>
-        <div className="tile-lg__icon">{icon}</div>
-        <div className="tile-lg__title">{title}</div>
-        <div className='tile-lg__wrapper'>
-          <div className="tile-lg__subtitle">{subtitle}</div>
-          <div className="tile-lg__linkIcon">{linkIcon}</div>
+        <div className="tile__icon">{icon}</div>
+        <h2 className="tile__title">{title}</h2>
+        <div className="tile__wrapper">
+          <p className="tile__subtitle">{subtitle}</p>
+          <div className="tile__link-icon">{linkIcon}</div>
         </div>
       </div>
     );
@@ -72,8 +73,8 @@ const Tile = props => {
       {(icon && linkIcon) && renderIconLinkTale()}
       {(title && subtitle) && renderTitleSubtitleTale()}
       {(title && subtitle && linkIcon) && renderTitleSubtitleLinkIndicatorTale()}
-      {(icon && title && subtitle && linkIcon ) && renderIconTitleSubtitleLinkTale()}
-      {(image && alt && title && subtitle && linkIcon ) && renderImageTitleSubtitleLinkTale()}
+      {(icon && title && subtitle && linkIcon) && renderIconTitleSubtitleLinkTale()}
+      {(image && alt && title && subtitle && linkIcon) && renderImageTitleSubtitleLinkTale()}
     </>
   );
 };
@@ -85,7 +86,7 @@ Tile.propTypes = {
   icon: PropTypes.object,
   linkIcon: PropTypes.object,
   image: PropTypes.string,
-  alt: PropTypes.string
+  alt: PropTypes.string,
 };
 
 export default Tile;
