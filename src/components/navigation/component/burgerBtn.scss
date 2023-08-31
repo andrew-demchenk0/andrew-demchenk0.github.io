@@ -1,0 +1,57 @@
+@import 'variables';
+
+.burger-btn {
+  display: none;
+  &__icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 24px;
+    position: relative;
+    user-select: none;
+
+    span {
+      background: var(--title-color);
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background .2s ease-out;
+      width: 18px;
+
+      &:before,
+      &:after {
+        background: var(--title-color);
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+      }
+
+      &:before {
+        top: 5px;
+      }
+
+      &:after {
+        top: -5px;
+      }
+    }
+
+  }
+
+  &:checked ~ .burger-btn__icon span {
+    background: transparent;
+  }
+  &:checked ~ .burger-btn__icon span:before {
+    transform: rotate(-45deg);
+  }
+  &:checked ~ .burger-btn__icon span:after {
+    transform: rotate(45deg);
+  }
+  &:checked ~ .burger-btn__icon:not(.steps) span:before,
+  &:checked ~ .burger-btn__icon:not(.steps) span:after {
+    top: 0;
+  }
+}
+

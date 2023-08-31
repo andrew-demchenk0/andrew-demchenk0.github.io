@@ -12,7 +12,7 @@ const AppFooter = () => {
     <footer className='footer'>
       <div className='footer__nav'>
         <Logo color="var(--title-color)" style={{ height: '30px' }} />
-        <Navigation />
+        <Navigation className={'navigation'}/>
       </div>
       <div className='socials'>
         <Socials />

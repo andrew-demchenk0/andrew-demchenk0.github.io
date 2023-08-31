@@ -2,11 +2,13 @@ import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import './navigation.scss';
-const Navigation = () => {
+import PropTypes from 'prop-types';
+const Navigation = props => {
+  const {className} = props
   const { t } = useTranslation('global');
 
   return (
-    <ul className='navigation'>
+    <ul className={className}>
       <li>
         <NavLink to="/"
                  className='navigation__item'
@@ -45,5 +47,9 @@ const Navigation = () => {
     </ul>
   );
 };
+
+Navigation.propTypes = {
+  className: PropTypes.string.isRequired,
+}
 
 export default Navigation;
