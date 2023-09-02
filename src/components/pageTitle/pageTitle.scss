@@ -11,6 +11,9 @@
     -webkit-text-stroke: 1px var(--main-color);
     overflow: hidden;
     line-height: 1;
+    place-content: center space-evenly;
+    display: flex;
+    letter-spacing: -2px;
   }
 }
 

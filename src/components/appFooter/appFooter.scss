@@ -40,3 +40,15 @@
     transform: translateY(3px) rotate(360deg);
   }
 }
+
+@media (max-width: 470px) {
+  .footer {
+    &__nav {
+      flex-direction: column;
+    }
+    &__info {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
