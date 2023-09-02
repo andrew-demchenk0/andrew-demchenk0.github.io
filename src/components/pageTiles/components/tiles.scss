@@ -49,6 +49,15 @@
   }
 
   &__image {
+    height: 200px;
+    width: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-position: center center;
+      object-fit: cover;
+    }
+
     &-photo {
       width: 100%;
       height: clamp(280px, 5vw, 300px);
@@ -59,6 +68,38 @@
         object-position: top right;
         object-fit: cover;
       }
+    }
+
+    &-avatar {
+      position: relative;
+      width: 90px;
+      height: 90px;
+      border-radius: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        object-position: center center;
+        object-fit: cover;
+      }
+      &:hover {
+        box-shadow: 0 1px 20px -5px var(--main-color);
+        &:after {
+          content: 'How are you doing?';
+          position: absolute;
+          top: calc(50% - 13px);
+          left: 100px;
+          padding: 5px 10px;
+          border-radius: 50px;
+          width: min-content;
+          white-space: nowrap;
+          font-size: $description;
+          color: var(--bg-color);
+          background: var(--main-color);
+        }
+      }
+
     }
   }
 

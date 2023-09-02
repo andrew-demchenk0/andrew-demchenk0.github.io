@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import PageTitle from 'components/pageTitle/PageTitle.jsx';
-import AboutPhoto from '../../assets/images/myPhotoAbout.jpeg';
+import PhotoAbout from 'assets/images/photo-about.jpeg';
 import { FaLinkedin, FaUniversity } from 'react-icons/fa';
 import { TbCircleArrowRight } from 'react-icons/tb';
 import { BsPersonVcard } from 'react-icons/bs';
@@ -21,7 +21,7 @@ const About = () => {
       <PageTitle text={t('pageTitle.about')} className="page-title animate__animated animate__fadeInDown"/>
       <section className="about">
         <ImageTile className="tile__image-photo about__tile1 animate__animated  animate__slideInLeft"
-                   image={AboutPhoto}
+                   image={PhotoAbout}
                    alt={'Author Photo'}/>
 
         <TextTile className={'tile about__tile2 animate__animated  animate__slideInRight'}

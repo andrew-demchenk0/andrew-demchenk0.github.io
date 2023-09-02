@@ -37,13 +37,6 @@ const Navigation = props => {
           {t('resume')}
         </NavLink>
       </li>
-      <li>
-        <NavLink to="/tech-skills"
-                 className='navigation__item'
-                 style={({isActive}) => ({color: isActive ? 'var(--main-color)' : 'var(--subtitle-color)'})}>
-          {t('techSkills')}
-        </NavLink>
-      </li>
     </ul>
   );
 };
