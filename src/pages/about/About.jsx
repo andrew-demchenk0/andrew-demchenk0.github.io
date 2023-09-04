@@ -5,11 +5,11 @@ import { FaLinkedin, FaUniversity } from 'react-icons/fa';
 import { TbCircleArrowRight } from 'react-icons/tb';
 import { BsPersonVcard } from 'react-icons/bs';
 
-import ImageTile from 'components/pageTiles/components/ImageTile.jsx';
-import IconTaleLink from 'components/pageTiles/components/IconTaleLink.jsx';
-import TextTile from 'components/pageTiles/components/TextTile.jsx';
-import TextTileLink from 'components/pageTiles/components/TextTileLink.jsx';
-import IconTextTileLink from 'components/pageTiles/components/IconTextTileLink.jsx';
+import ImageTile from 'components/tiles/components/ImageTile.jsx';
+import IconTaleLink from 'components/tiles/components/IconTaleLink.jsx';
+import TextTile from 'components/tiles/components/TextTile.jsx';
+import TextTileLink from 'components/tiles/components/TextTileLink.jsx';
+import IconTextTileLink from 'components/tiles/components/IconTextTileLink.jsx';
 
 import './about.scss';
 

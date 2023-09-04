@@ -3,12 +3,12 @@ import Navigation from 'components/navigation/Navigation.jsx';
 import ThemeSwitcher from 'components/switchers/ThemeSwitcher.jsx';
 import LangSwitcher from 'components/switchers/LangSwitcher.jsx';
 
-import './appHeader.scss';
+import './header.scss';
 import { useMediaQuery } from 'react-responsive';
 import BurgerBtn from 'components/navigation/component/BurgerBtn.jsx';
 import { useState } from 'react';
 
-const AppHeader = () => {
+const Header = () => {
   const isMobile = useMediaQuery({maxWidth: 768});
   const [isBurgerChecked, setIsBurgerChecked] = useState(false);
 
@@ -43,4 +43,4 @@ const AppHeader = () => {
   );
 };
 
-export default AppHeader;
+export default Header;

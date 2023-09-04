@@ -2,11 +2,11 @@ import Logo from '../../assets/icons/logo/Logo.jsx';
 import Navigation from 'components/navigation/Navigation.jsx';
 import { FaReact } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
-import Socials from 'components/Socials/Socials.jsx';
+import Socials from 'components/socials/Socials.jsx';
 
 
-import './appFooter.scss';
-const AppFooter = () => {
+import './footer.scss';
+const Footer = () => {
   const { t } = useTranslation('global');
   return (
     <footer className='footer'>
@@ -40,4 +40,4 @@ const AppFooter = () => {
   );
 };
 
-export default AppFooter;
+export default Footer;

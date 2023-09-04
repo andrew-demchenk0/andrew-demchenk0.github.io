@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import PageTitle from 'components/pageTitle/PageTitle.jsx';
-import ProjectTile from 'components/pageTiles/components/ProjectTile.jsx';
+import ProjectTile from 'components/tiles/components/ProjectTile.jsx';
 import MarvelPr from 'assets/images/projects/marvel-project.webp';
 import MoviePr from 'assets/images/projects/movie-db.jpg';
 import TravelPr from 'assets/images/projects/travel-project.webp';

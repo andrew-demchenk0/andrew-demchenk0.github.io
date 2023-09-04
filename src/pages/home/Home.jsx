@@ -1,12 +1,12 @@
 import './home.scss';
 import { FaLinkedin } from 'react-icons/fa';
 import { TbCircleArrowRight } from 'react-icons/tb';
-import IconTaleLink from 'components/pageTiles/components/IconTaleLink.jsx';
-import TextTileLink from 'components/pageTiles/components/TextTileLink.jsx';
+import IconTaleLink from 'components/tiles/components/IconTaleLink.jsx';
+import TextTileLink from 'components/tiles/components/TextTileLink.jsx';
 import { useTranslation } from 'react-i18next';
 import { BsPersonVcard } from 'react-icons/bs';
-import IconTextTileLink from 'components/pageTiles/components/IconTextTileLink.jsx';
-import ImageTextTileLink from 'components/pageTiles/components/ImageTextTileLink.jsx';
+import IconTextTileLink from 'components/tiles/components/IconTextTileLink.jsx';
+import ImageTextTileLink from 'components/tiles/components/ImageTextTileLink.jsx';
 import PhotoHome from 'assets/images/photo-home.jpeg';
 const Home = () => {
   const { t } =useTranslation('global');
