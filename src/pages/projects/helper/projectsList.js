@@ -4,6 +4,7 @@ export const projects = [
     // subtitle
     // description
     // preview
+    // background
     // image
     // github
     // skils

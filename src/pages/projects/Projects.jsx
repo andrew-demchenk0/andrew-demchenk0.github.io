@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import PageTitle from 'components/pageTitle/PageTitle.jsx';
 import ProjectTile from 'components/tiles/components/ProjectTile.jsx';
-import MarvelPr from 'assets/images/projects/marvel-project.webp';
+import MarvelPr from 'assets/images/projects/project-7-marvel-info-portal/marvel-preview.webp';
 import MoviePr from 'assets/images/projects/movie-db.jpg';
 import TravelPr from 'assets/images/projects/travel-project.webp';
 import SmartRunPr from 'assets/images/projects/smartrun-project.jpg';
