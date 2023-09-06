@@ -2,9 +2,9 @@ import { useTranslation } from 'react-i18next';
 import PageTitle from 'components/pageTitle/PageTitle.jsx';
 import ProjectTile from 'components/tiles/components/ProjectTile.jsx';
 import MarvelPr from 'assets/images/projects/project-7-marvel-info-portal/marvel-preview.webp';
-import MoviePr from 'assets/images/projects/movie-db.jpg';
+import MoviePr from 'assets/images/projects/project-5-movies/movie-preview.jpg';
 import TravelPr from 'assets/images/projects/travel-project.webp';
-import SmartRunPr from 'assets/images/projects/smartrun-project.jpg';
+import SmartRunPr from 'assets/images/projects/project-3-run-smart/smartrun-preview.jpg';
 import { TbCircleArrowRight } from 'react-icons/tb';
 
 import './projects.scss';
