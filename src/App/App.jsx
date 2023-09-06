@@ -10,7 +10,7 @@ import Footer from 'components/footer/Footer.jsx';
 import Home from 'pages/home/Home.jsx';
 import About from 'pages/about/About.jsx';
 import Projects from 'pages/projects/Projects.jsx';
-import Project from 'components/project/Project.jsx';
+import Project from 'pages/single project/Project.jsx';
 import Resume from 'pages/resume/Resume.jsx';
 import Skills from 'pages/skills/Skills.jsx';
 import Page404 from 'pages/404/404.jsx';

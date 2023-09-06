@@ -3,7 +3,7 @@ import PageTitle from 'components/pageTitle/PageTitle.jsx';
 import ProjectTile from 'components/tiles/components/ProjectTile.jsx';
 import MarvelPr from 'assets/images/projects/project-7-marvel-info-portal/marvel-preview.webp';
 import MoviePr from 'assets/images/projects/project-5-movies/movie-preview.jpg';
-import TravelPr from 'assets/images/projects/travel-project.webp';
+import TravelPr from 'assets/images/projects/travel-single project.webp';
 import SmartRunPr from 'assets/images/projects/project-3-run-smart/smartrun-preview.jpg';
 import { TbCircleArrowRight } from 'react-icons/tb';
 
@@ -17,7 +17,7 @@ const Projects = () => {
       <section className='projects'>
         <ProjectTile className={'tile projects__tile1 animate__animated  animate__slideInLeft'}
                      image={MarvelPr}
-                     alt={'Marvel project image'}
+                     alt={'Marvel single project image'}
                      title={'marvel'}
                      subtitle={'api'}
                      linkIcon={<TbCircleArrowRight className='tile__link-icon'/>}
@@ -25,7 +25,7 @@ const Projects = () => {
 
         <ProjectTile className={'tile projects__tile5 animate__animated  animate__slideInRight'}
                      image={MoviePr}
-                     alt={'Movie project image'}
+                     alt={'Movie single project image'}
                      title={'Movie'}
                      subtitle={'api'}
                      linkIcon={<TbCircleArrowRight className='tile__link-icon'/>}
@@ -33,7 +33,7 @@ const Projects = () => {
 
         <ProjectTile className={'tile projects__tile3 animate__animated  animate__slideInRight'}
                      image={TravelPr}
-                     alt={'travel project image'}
+                     alt={'travel single project image'}
                      title={'Travel'}
                      subtitle={'api'}
                      linkIcon={<TbCircleArrowRight className='tile__link-icon'/>}
@@ -41,7 +41,7 @@ const Projects = () => {
 
         <ProjectTile className={'tile projects__tile2 animate__animated  animate__slideInLeft'}
                      image={SmartRunPr}
-                     alt={'Smart Run project image'}
+                     alt={'Smart Run single project image'}
                      title={'Smart Run'}
                      subtitle={'api'}
                      linkIcon={<TbCircleArrowRight className='tile__link-icon'/>}
