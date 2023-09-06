@@ -1,12 +1,18 @@
 import './button.scss';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
+import { AiFillGithub } from 'react-icons/ai';
+import { LuView } from 'react-icons/lu';
 const Button = props => {
-  const { className, text, link } =props;
+  const { className, link } = props;
   return (
-    <NavLink to={link}>
+    <NavLink to={link} style={{textDecoration: 'none'}}>
       <button className={className}>
-        {text}
+        {className.includes('button__github') ? <div className='button__icon'><AiFillGithub/></div> : null}
+        {className.includes('button__view') ? <div className='button__icon'><LuView/></div> : null}
+
+        {className.includes('button__github') ? ' View Source Code' : null}
+        {className.includes('button__view') ? ' View Project' : null}
       </button>
     </NavLink>
   );
@@ -14,8 +20,7 @@ const Button = props => {
 
 Button.propTypes = {
   className: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
-  link: PropTypes.string,
+  link: PropTypes.string.isRequired,
 }
 
 export default Button;

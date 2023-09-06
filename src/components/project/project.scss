@@ -49,7 +49,7 @@
     align-items: center;
     gap: 10px;
     color: #EEEEEEFF;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 1px;
     font-size: $navigation-link;
     &-arrow {
@@ -65,18 +65,20 @@
   &__subtitle {
     color: #C7C7C7;
     margin-bottom: 20px;
+    font-size: $subtitle;
   }
   &__title {
     color: #EEEEEEFF;
     margin-bottom: 20px;
-
+    font-size: $title;
   }
   &__description {
     color: #C7C7C7;
     margin-bottom: 20px;
-
+    font-size: $description;
   }
   &__skills {
+    font-size: $subtitle;
     color: #EEEEEEFF;
     margin-bottom: 20px;
     display: flex;
@@ -84,8 +86,10 @@
     align-items: center;
     gap: 10px;
     li {
+      color: #EEEEEE;
       cursor: pointer;
-      font-size: 30px;
+      //font-size: 30px;
+      font-size: $skill-icons;
       &:hover {
         color: var(--main-color);
       }
@@ -97,7 +101,12 @@
     border: 1px solid #EEEEEEFF;
     height: 0.5px;
     border-radius: 100px;
-    margin-bottom: 20px;
+  }
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
   }
   &__scroll {
     height: 30px;

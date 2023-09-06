@@ -39,9 +39,9 @@ const Project = () => {
              </ul>
              <hr className='project__divider'/>
              <div className='project__buttons'>
-               <Button className={'button button__demo'} text={'demo'} link={'https://project-7-marvel-info-portal.vercel.app/'}/>
+               <Button className={'button button__view'} link={'###'}/>
 
-               <Button className={'button button__code'} text={'git'} link={'https://github.com/andrew-demchenk0?tab=repositories'}/>
+               <Button className={'button button__github'} link={'###'}/>
              </div>
              <HiChevronDoubleDown className='project__scroll'/>
            </div>
