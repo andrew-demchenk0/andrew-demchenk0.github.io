@@ -8,7 +8,8 @@
       "assets/*": ["assets/*"],
       "pages/*": ["pages/*"],
       "styles/*": ["styles/*"],
-      "translations/*": ["translations/*"]
+      "translations/*": ["translations/*"],
+      "utils/*": ["utils/*"]
     }
   }
 }

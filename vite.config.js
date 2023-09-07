@@ -13,6 +13,7 @@ export default defineConfig({
       pages: 'src/pages',
       styles: 'src/styles',
       translations: 'src/translations',
+      utils: 'src/utils',
     }
   }
 });

@@ -1,5 +1,6 @@
 import { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ScrollToTop from 'utils/scrollToTop.js';
 
 import 'animate.css';
 import 'styles/styles.scss';
@@ -17,10 +18,10 @@ import Page404 from 'pages/404/404.jsx';
 
 
 function App() {
-
   return (
     <Router>
       <div className='app'>
+        <ScrollToTop/>
         <Header />
         <main>
           <Suspense>
