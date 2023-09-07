@@ -1,0 +1,66 @@
+@import 'src/styles/variables';
+
+.spinner {
+  display: block;
+  margin: auto;
+  width: 57.6px;
+  height: 57.6px;
+  animation: spinner 3s infinite ease;
+  transform-style: preserve-3d;
+
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #222222;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: rgba(102, 187, 106, 0.2);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    border: 2.9px solid #66bb6a;
+
+    &:nth-of-type(1) {
+      transform: translateZ(-28.8px) rotateY(180deg);
+    }
+
+    &:nth-of-type(2) {
+      transform: rotateY(-270deg) translateX(50%);
+      transform-origin: top right;
+    }
+
+    &:nth-of-type(3) {
+      transform: rotateY(270deg) translateX(-50%);
+      transform-origin: center left;
+    }
+
+    &:nth-of-type(4) {
+      transform: rotateX(90deg) translateY(-50%);
+      transform-origin: top center;
+    }
+
+    &:nth-of-type(5) {
+      transform: rotateX(-90deg) translateY(50%);
+      transform-origin: bottom center;
+    }
+
+    &:nth-of-type(6) {
+      transform: translateZ(28.8px);
+    }
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+  }
+
+  50% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
+
+  100% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+  }
+}
