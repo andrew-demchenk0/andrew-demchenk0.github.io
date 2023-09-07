@@ -15,7 +15,7 @@ const Projects = () => {
       <section className="projects">
         {projects.map(project => {
           return <ProjectTile key={project.id}
-                              className={'tile animate__animated  animate__slideInLeft'}
+                              className={`tile animate__animated ${project.animationClass} ${project.gridClass}`}
                               image={project.preview}
                               alt={t(project.title)}
                               title={t(project.title)}

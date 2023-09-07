@@ -20,36 +20,36 @@ const About = () => {
     <main>
       <PageTitle text={t('pageTitle.about')} className="page-title animate__animated animate__fadeInDown"/>
       <section className="about">
-        <ImageTile className="tile__image-photo about__tile1 animate__animated  animate__slideInLeft"
+        <ImageTile className="tile__image-photo about-1 animate__animated  animate__slideInLeft"
                    image={PhotoAbout}
                    alt={'Author Photo'}/>
 
-        <TextTile className={'tile about__tile2 animate__animated  animate__slideInRight'}
+        <TextTile className={'tile about-2 animate__animated  animate__slideInRight'}
                   title={t('aboutPage.greeting.title')}
                   subtitle={t('aboutPage.greeting.subtitle')}/>
 
-        <TextTile className={'tile about__tile3 animate__animated  animate__slideInLeft'}
+        <TextTile className={'tile about-3 animate__animated  animate__slideInLeft'}
                   title={t('aboutPage.about.title')}
                   subtitle={t('aboutPage.about.description')}/>
 
-        <IconTextTileLink className={'tile about__tile4 animate__animated  animate__slideInRight'}
+        <IconTextTileLink className={'tile about-4 animate__animated  animate__slideInRight'}
                           icon={<FaUniversity/>} title={t('aboutPage.education.title')}
                           subtitle={t('aboutPage.education.subtitle')}
                           linkIcon={<TbCircleArrowRight className='tile__link-icon'/>}
                           linkTo={'/education'}/>
 
-        <IconTaleLink className={'tile tile-icon__tile about__tile5 animate__animated  animate__slideInLeft'}
+        <IconTaleLink className={'tile tile-icon__tile about-5 animate__animated  animate__slideInLeft'}
                       icon={<FaLinkedin/>}
                       linkIcon={<TbCircleArrowRight className='tile__link-icon tile__link-icon__absolute'/>}
                       link={'https://www.linkedin.com/in/andrii-demchenko-21334125a/'}/>
 
-        <TextTileLink className={'tile about__tile6 animate__animated  animate__slideInRight'}
+        <TextTileLink className={'tile about-6 animate__animated  animate__slideInRight'}
                       title={t('aboutPage.contact.title')}
                       subtitle={t('aboutPage.contact.subtitle')}
                       linkIcon={<TbCircleArrowRight className='tile__link-icon'/>}
                       linkTo={'/contacts'}/>
 
-        <IconTextTileLink className={'tile about__tile7 animate__animated  animate__slideInRight'}
+        <IconTextTileLink className={'tile about-7 animate__animated  animate__slideInRight'}
                           icon={<BsPersonVcard/>}
                           title={t('aboutPage.resume.title')}
                           subtitle={t('aboutPage.resume.subtitle')}

@@ -4,6 +4,26 @@ import 'translations/i18n.js';
 
 export const projects = [
   {
+    id: 'portfolio',
+    title: i18next.t('project.portgolio.title'),
+    subtitle: i18next.t('project.portgolio.subtitle'),
+    description: i18next.t('project.portgolio.description'),
+    preview: Images.marvelPreview,
+    background: Images.marvelBg,
+    images: [
+      Images.marvelImg1,
+      Images.marvelImg2,
+      Images.marvelImg3,
+    ],
+    view: 'https://andrew-demchenk0.github.io/',
+    github: 'https://github.com/andrew-demchenk0/andrew-demchenk0.github.io',
+    skills: [
+      `react`, `sass`, 'js',
+    ],
+    animationClass: 'animate__slideInLeft',
+    gridClass: 'projects-1',
+  },
+  {
     id: 'marvel',
     title: i18next.t('project.marvel.title'),
     subtitle: i18next.t('project.marvel.subtitle'),
@@ -20,6 +40,8 @@ export const projects = [
     skills: [
         `react`, `sass`, 'js', 'api',
     ],
+    animationClass: 'animate__slideInRight',
+    gridClass: 'projects-2',
   },
   {
     id: 'travel',
@@ -38,6 +60,8 @@ export const projects = [
     skills: [
       `react`,'redux', `sass`, 'js', 'api',
     ],
+    animationClass: 'animate__slideInLeft',
+    gridClass: 'projects-3',
   },
   {
     id: 'movie',
@@ -49,13 +73,14 @@ export const projects = [
     images: [
       Images.movieImg1,
       Images.movieImg2,
-      Images.movieImg3,
     ],
     view: 'https://project-5-movies.vercel.app/',
     github: 'https://github.com/andrew-demchenk0/project-5-movies',
     skills: [
       'ts', 'html', 'css', 'api',
     ],
+    animationClass: 'animate__slideInRight',
+    gridClass: 'projects-4',
   },
   {
     id: 'streaming',
@@ -72,6 +97,8 @@ export const projects = [
     skills: [
       `sass`, 'html',
     ],
+    animationClass: 'animate__slideInLeft',
+    gridClass: 'projects-6',
   },
   {
     id: 'runSmart',
@@ -88,6 +115,8 @@ export const projects = [
     skills: [
       'html', `sass`, 'js', 'php',
     ],
+    animationClass: 'animate__slideInRight',
+    gridClass: 'projects-5',
   },
   {
     id: 'uber',
@@ -104,6 +133,8 @@ export const projects = [
     skills: [
       'html',`sass`, 'js',
     ],
+    animationClass: 'animate__slideInRight',
+    gridClass: 'projects-7',
   },
   {
     id: 'wordpress',
@@ -120,6 +151,8 @@ export const projects = [
     skills: [
       'html', 'css',
     ],
+    animationClass: 'animate__slideInRight',
+    gridClass: 'projects-8',
   }
 ];
 
