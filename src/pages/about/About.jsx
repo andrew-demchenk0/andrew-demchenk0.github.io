@@ -47,7 +47,7 @@ const About = () => {
                       title={t('aboutPage.contact.title')}
                       subtitle={t('aboutPage.contact.subtitle')}
                       linkIcon={<TbCircleArrowRight className='tile__link-icon'/>}
-                      linkTo={'/contacts'}/>
+                      linkTo={'mailto: 2andrew.demchenko@gmail.com'}/>
 
         <IconTextTileLink className={'tile about-7 animate__animated  animate__slideInRight'}
                           icon={<BsPersonVcard/>}

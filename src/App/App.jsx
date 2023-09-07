@@ -23,7 +23,6 @@ function App() {
       <div className='app'>
         <ScrollToTop/>
         <Header />
-        <main>
           <Suspense>
             <Routes>
               <Route exact path="/" element={<Home />} />
@@ -35,7 +34,6 @@ function App() {
               <Route path="*" element={<Page404 />} />
             </Routes>
           </Suspense>
-        </main>
         <Footer />
       </div>
     </Router>
