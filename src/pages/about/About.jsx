@@ -17,7 +17,7 @@ const About = () => {
   const { t } = useTranslation('global');
 
   return (
-    <main>
+    <>
       <PageTitle text={t('pageTitle.about')} className="page-title animate__animated animate__fadeInDown"/>
       <section className="about">
         <ImageTile className="tile__image-photo about-1 animate__animated  animate__slideInLeft"
@@ -56,7 +56,7 @@ const About = () => {
                           linkIcon={<TbCircleArrowRight className='tile__link-icon'/>}
                           linkTo={'/resume'}/>
       </section>
-    </main>
+    </>
   );
 };
 

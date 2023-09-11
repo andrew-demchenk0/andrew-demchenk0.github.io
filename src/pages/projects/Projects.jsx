@@ -10,7 +10,7 @@ const Projects = () => {
   const { t } = useTranslation('global');
 
   return (
-    <main>
+    <>
       <PageTitle text={t('pageTitle.projects')} className="page-title animate__animated animate__fadeInDown"/>
       <section className="projects">
         {projects.map(project => {
@@ -24,7 +24,7 @@ const Projects = () => {
                               linkTo={'/projects/' + project.id}/>;
         })}
       </section>
-    </main>
+    </>
   );
 };
 
