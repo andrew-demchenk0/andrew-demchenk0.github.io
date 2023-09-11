@@ -46,38 +46,39 @@
     "skills": "Навички:",
     "wordpress": {
       "title": "Wordpress",
-      "subtitle": "My first training project",
-      "description": "Simple landing page for desktops."
+      "subtitle": "Мій перший навчальний проект",
+      "description": "Проста цільова сторінка для комп’ютерів."
     },
     "uber": {
       "title": "Uber",
-      "subtitle": "Training project",
-      "description": "This is a simple landing page, fully responsive for all devices. In this project, I learned how to use the SASS preprocessor and how to make a mobile menu using javascript."
+      "subtitle": "Навчальний проект",
+      "description": "Це проста цільова сторінка, яка адаптована під всі пристрої. У цьому проекті я навчився використовувати препроцесор SASS і як створити мобільне меню за допомогою javascript."
     },
     "runSmart": {
       "title": "RunSmart",
-      "subtitle": "Landing for the sale of smart watches",
-      "description": "A simple landing page with full adaptation for all devices. It is possible to send applications or buy goods by sending your contact information to the seller's mail."
+      "subtitle": "Лендінг з продажу розумних годинників",
+      "description": "Односторінковий магазин з повною адаптацією під всі пристрої. Є мождмвість надіслати заявку або купити товар, відправивши свої контактні дані на пошту продавця."
     },
     "streaming": {
       "title": "Streaming service",
-      "subtitle": "Cats streaming service",
-      "description": "Streaming service project template. Adaptive."
+      "subtitle": "Стрімінговий сервіс для котиків",
+      "description": "Шаблон стрімінгового сервісу. Адапттвний дизайн."
     },
     "movie": {
       "title": "Movie",
-      "subtitle": "Movie database",
-      "description": "The application is written in typescript, using movie db. This is a site for finding movies and adding them to your favorites for later viewing. Kind of like a notebook of movies."
+      "subtitle": "База даних фільмів",
+      "description": "Додаток написаний на тайпскрипті з використанням movie db API. Це сайт з пошуку фільмів і додавання їх до вибраного для подальшого перегляду."
     },
     "travel": {
       "title": "Travel",
-      "subtitle": "Travel booking",
-      "description": "React application in connection with redux and API. Adaptive design. A simple example of a travel booking application. Simple registration and storage of reservations has been implemented."
+      "subtitle": "Бронювання подорожей",
+      "description": "Додаток React у зв’язку з redux і API. Адаптивний дизайн. Простий приклад програми бронювання подорожей. Реалізовано просту реєстрацію та зберігання бронювань."
     },
     "marvel": {
       "title": "Marvel",
-      "subtitle": "Marvel info portal",
-      "description": "This app is an educational mockup. Here I worked with \"Marvel API\". A lot of functionality was implemented in the application using many libraries, hooks, etc."
+      "subtitle": "Інформаційний портал Marvel",
+      "description": "Тут я працював з «Marvel API». Багато функціоналу було реалізовано за допомогою багатьох бібліотек, хуків тощо."
     }
   }
+
 }
