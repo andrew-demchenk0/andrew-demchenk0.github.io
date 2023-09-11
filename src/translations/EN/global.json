@@ -13,7 +13,8 @@
   },
   "pageTitle": {
     "projects": "All Works",
-    "about": "About Me"
+    "about": "About Me",
+    "education": "Education"
   },
   "aboutPage": {
     "greeting": {
@@ -78,6 +79,38 @@
       "subtitle": "Marvel info portal",
       "description": "This app is an educational mockup. Here I worked with \"Marvel API\". A lot of functionality was implemented in the application using many libraries, hooks, etc."
     }
+  },
+  "education": {
+    "certificates": "All Certificates:",
+    "diplomas": "All Diplomas:",
+    "description": "Coming soon...",
+    "certificate": {
+      "web": {
+        "title": "WEB-developer",
+        "subtitle": "Certificate"
+      },
+      "react": {
+        "title": "Full course on Javascript + React",
+        "subtitle": "Certificate"
+      },
+      "javascriptAdvanced": {
+        "title": "Practical Javascript (Advanced level)",
+        "subtitle": "Certificate"
+      }
+    },
+    "diploma": {
+      "elit": {
+        "title": "Faculty of Electronics and Information Technologies",
+        "subtitle": "Bachelor's degree"
+      },
+      "marketing": {
+        "title": "Faculty of Economics and Management | Marketing",
+        "subtitle": "Master's degree"
+      },
+      "adm": {
+        "title": "Administrative management",
+        "subtitle": "Master's degree"
+      }
+    }
   }
-
 }

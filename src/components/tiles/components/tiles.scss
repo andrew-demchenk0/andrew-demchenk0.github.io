@@ -58,6 +58,11 @@
     color: var(--subtitle-color);
   }
 
+  &__description {
+    font-size: $description;
+    color: var(--subtitle-color);
+  }
+
   &__image {
     height: 200px;
     width: 100%;
@@ -111,7 +116,17 @@
           background: var(--main-color);
         }
       }
+    }
+    &-icon {
+      width: 200px;
+      margin: auto;
 
+      img {
+        width: 100%;
+        height: 100%;
+        object-position: center center;
+        object-fit: contain;
+      }
     }
   }
 

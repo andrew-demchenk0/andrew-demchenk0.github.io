@@ -13,8 +13,8 @@
   },
   "pageTitle": {
     "projects": "Проєкти",
-    "about": "Про мене"
-
+    "about": "Про мене",
+    "education": "Освіта"
   },
   "aboutPage": {
     "greeting": {
@@ -79,6 +79,38 @@
       "subtitle": "Інформаційний портал Marvel",
       "description": "Тут я працював з «Marvel API». Багато функціоналу було реалізовано за допомогою багатьох бібліотек, хуків тощо."
     }
+  },
+  "education": {
+    "certificates": "Всі Сертифікати:",
+    "diplomas": "Всі Дипломи:",
+    "description": "Незабаром...",
+    "certificate": {
+      "web": {
+        "title": "Веб розробник",
+        "subtitle": "сертифікат"
+      },
+      "react": {
+        "title": "Поввний курс по Javascript + React",
+        "subtitle": "сертифікат"
+      },
+      "javascriptAdvanced": {
+        "title": "Javascript на практиці (продвинутий рівень)",
+        "subtitle": "сертифікат"
+      }
+    },
+    "diploma": {
+      "elit": {
+        "title": "Факульткт Електроніки та Інформаційних Технологій",
+        "subtitle": "Диплом бакалавра"
+      },
+      "marketing": {
+        "title": "Факульткт Економіки та Менеджменту | Маркетинг",
+        "subtitle": "Диплом магістра"
+      },
+      "adm": {
+        "title": "Адміністративний Менеджмнент",
+        "subtitle": "Диплом магістра"
+      }
+    }
   }
-
 }
