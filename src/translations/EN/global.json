@@ -78,6 +78,11 @@
       "title": "Marvel",
       "subtitle": "Marvel info portal",
       "description": "This app is an educational mockup. Here I worked with \"Marvel API\". A lot of functionality was implemented in the application using many libraries, hooks, etc."
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "subtitle": "My very own website",
+      "description": "This React application is constantly evolving and improving over time. Future plans include creating a blog and a page for my own products, which I intend to develop in my spare time. With the experience gained, this application will continuously change and enhance itself. I will also be adding new technologies and much more as needed."
     }
   },
   "education": {

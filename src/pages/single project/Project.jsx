@@ -6,7 +6,9 @@ import Page404 from 'pages/404/404.jsx';
 import { HiChevronDoubleDown, HiOutlineArrowNarrowLeft } from 'react-icons/hi';
 import { FaCss3Alt, FaHtml5, FaPhp, FaReact, FaSass } from 'react-icons/fa';
 import { BiLogoJavascript, BiLogoRedux, BiLogoTypescript } from 'react-icons/bi';
+import { TbApi } from 'react-icons/tb';
 import './project.scss';
+import { SiI18Next } from 'react-icons/si';
 
 const Project = () => {
   const { t } = useTranslation('global');
@@ -45,7 +47,8 @@ const Project = () => {
                   {skill === 'css' ? <FaCss3Alt/> : null}
                   {skill === 'sass' ? <FaSass/> : null}
                   {skill === 'php' ? <FaPhp/> : null}
-                  {skill === 'api' ? 'API' : null}
+                  {skill === 'api' ? <TbApi/> : null}
+                  {skill === 'i18n' ? <SiI18Next/> : null}
                 </li>
               ))}
             </ul>

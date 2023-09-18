@@ -5,20 +5,18 @@ import 'translations/i18n.js';
 export const projects = [
   {
     id: 'portfolio',
-    title: i18next.t('project.portgolio.title'),
-    subtitle: i18next.t('project.portgolio.subtitle'),
-    description: i18next.t('project.portgolio.description'),
-    preview: Images.marvelPreview,
-    background: Images.marvelBg,
+    title: i18next.t('project.portfolio.title'),
+    subtitle: i18next.t('project.portfolio.subtitle'),
+    description: i18next.t('project.portfolio.description'),
+    preview: Images.portfolioPreview,
+    background: Images.portfolioBg,
     images: [
-      Images.marvelImg1,
-      Images.marvelImg2,
-      Images.marvelImg3,
+
     ],
     view: 'https://andrew-demchenk0.github.io/',
     github: 'https://github.com/andrew-demchenk0/andrew-demchenk0.github.io',
     skills: [
-      `react`, `sass`, 'js',
+      `react`, `sass`, 'js', 'i18n',
     ],
     animationClass: 'animate__slideInLeft',
     gridClass: 'projects-1',

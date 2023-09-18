@@ -24,7 +24,8 @@ import marvelBg from 'assets/images/projects/project-7-marvel-info-portal/marvel
 import marvelImg1 from 'assets/images/projects/project-7-marvel-info-portal/marvel-img-1.png';
 import marvelImg2 from 'assets/images/projects/project-7-marvel-info-portal/marvel-img-2.png';
 import marvelImg3 from 'assets/images/projects/project-7-marvel-info-portal/marvel-img-3.png';
-
+import portfolioPreview from 'assets/images/projects/project-portfolio/portfolio-preview.png';
+import portfolioBg from 'assets/images/projects/project-portfolio/portfolio-bg.jpg';
 
 
 export const Images = {
@@ -35,7 +36,7 @@ export const Images = {
   moviePreview, movieBg, movieImg1, movieImg2,
   travelPreview, travelBg, travelImg1, travelImg2, travelImg3,
   marvelPreview, marvelBg, marvelImg1, marvelImg2, marvelImg3,
-
-}
+  portfolioPreview, portfolioBg,
+};
 
 
