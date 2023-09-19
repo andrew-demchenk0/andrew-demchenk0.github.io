@@ -56,6 +56,11 @@
   &__subtitle {
     font-size: $subtitle;
     color: var(--subtitle-color);
+
+    &-special {
+      font-size: $title;
+      color: var(--main-color);
+    }
   }
 
   &__description {

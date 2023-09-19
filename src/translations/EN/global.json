@@ -40,7 +40,8 @@
   },
   "button": {
     "github": "View Source Code",
-    "view": "View Project"
+    "view": "View Project",
+    "contactMe": "Contact me"
   },
   "project": {
     "skills": "Skills:",

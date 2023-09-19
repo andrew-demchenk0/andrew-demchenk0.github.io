@@ -1,0 +1,17 @@
+@import 'src/styles/variables';
+
+.resume {
+  margin-top: 60px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  &__aside {
+    width: fit-content;
+    position: sticky;
+  }
+
+  &__info {
+  }
+}
