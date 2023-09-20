@@ -1,22 +1,25 @@
-import './home.scss';
-import { FaLinkedin } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
+import { projects } from 'pages/projects/helper/projectsList.js';
 import { TbCircleArrowRight } from 'react-icons/tb';
+import { FaLinkedin } from 'react-icons/fa';
+import { BsPersonVcard } from 'react-icons/bs';
+
+import ProjectTile from 'components/tiles/components/ProjectTile.jsx';
 import IconTaleLink from 'components/tiles/components/IconTaleLink.jsx';
 import TextTileLink from 'components/tiles/components/TextTileLink.jsx';
-import { useTranslation } from 'react-i18next';
-import { BsPersonVcard } from 'react-icons/bs';
 import IconTextTileLink from 'components/tiles/components/IconTextTileLink.jsx';
 import ImageTextTileLink from 'components/tiles/components/ImageTextTileLink.jsx';
-import PhotoHome from 'assets/images/photo-home.jpeg';
 import WhatIDo from 'components/tiles/components/WhatIDo.jsx';
-import { projects } from 'pages/projects/helper/projectsList.js';
-import ProjectTile from 'components/tiles/components/ProjectTile.jsx';
+
+import PhotoHome from 'assets/images/photo-home.jpeg';
+
+import './home.scss';
 
 const Home = () => {
   const { t } = useTranslation('global');
   const marvel = projects[1],
-    movie = projects[3],
-    travel = projects[2];
+        movie = projects[3],
+        travel = projects[2];
 
   return (
     <section className="home">

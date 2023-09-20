@@ -1,20 +1,22 @@
-import './education.scss';
-import PageTitle from 'components/pageTitle/PageTitle.jsx';
 import { useTranslation } from 'react-i18next';
-import { TbCircleArrowRight } from 'react-icons/tb';
 import { diplomas } from 'pages/education/helper/diplomasList.js';
-import EducationTile from 'components/tiles/components/EducationTile.jsx';
 import { certificates } from 'pages/education/helper/certificatesList.js';
 
+import PageTitle from 'components/pageTitle/PageTitle.jsx';
+import EducationTile from 'components/tiles/components/EducationTile.jsx';
+
+import { TbCircleArrowRight } from 'react-icons/tb';
+
+import './education.scss';
 
 const Education = () => {
   const { t } = useTranslation('global');
   return (
     <>
       <PageTitle text={t('pageTitle.education')} className="page-title animate__animated animate__fadeInDown"/>
-      <section className='education'>
+      <section className="education">
         <h2 className="education__title">{t('education.diplomas')}</h2>
-        <div className='education__grid'>
+        <div className="education__grid">
           {diplomas.map(diploma => {
             return <EducationTile key={diploma.id}
                                   className={`tile animate__animated ${diploma.animationClass}`}
@@ -28,7 +30,7 @@ const Education = () => {
           })}
         </div>
         <h2 className="education__title">{t('education.certificates')}</h2>
-        <div className='education__grid'>
+        <div className="education__grid">
           {certificates.map(certificate => {
             return <EducationTile key={certificate.id}
                                   className={`tile animate__animated ${certificate.animationClass}`}

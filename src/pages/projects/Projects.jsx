@@ -1,7 +1,9 @@
 import { useTranslation } from 'react-i18next';
 import { projects } from 'pages/projects/helper/projectsList.js';
+
 import PageTitle from 'components/pageTitle/PageTitle.jsx';
 import ProjectTile from 'components/tiles/components/ProjectTile.jsx';
+
 import { TbCircleArrowRight } from 'react-icons/tb';
 
 import './projects.scss';

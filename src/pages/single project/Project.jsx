@@ -1,14 +1,17 @@
 import { NavLink, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { projects } from 'pages/projects/helper/projectsList.js';
+
 import Button from 'components/button/Button.jsx';
 import Page404 from 'pages/404/404.jsx';
+
 import { HiChevronDoubleDown, HiOutlineArrowNarrowLeft } from 'react-icons/hi';
 import { FaCss3Alt, FaHtml5, FaPhp, FaReact, FaSass } from 'react-icons/fa';
 import { BiLogoJavascript, BiLogoRedux, BiLogoTypescript } from 'react-icons/bi';
 import { TbApi } from 'react-icons/tb';
-import './project.scss';
 import { SiI18Next } from 'react-icons/si';
+
+import './project.scss';
 
 const Project = () => {
   const { t } = useTranslation('global');

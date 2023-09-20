@@ -1,5 +1,5 @@
-import {Icons} from 'assets/helper/iconsHelper.js'
 import i18next from 'i18next';
+import { Icons } from 'assets/helper/iconsHelper.js';
 import 'translations/i18n.js';
 
 export const diplomas = [
