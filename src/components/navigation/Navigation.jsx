@@ -1,48 +1,40 @@
+import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { navigationLinks } from 'components/navigation/helper/navigationLinks.js';
 
 import './navigation.scss';
-import PropTypes from 'prop-types';
-const Navigation = props => {
-  const {className} = props
+
+const Navigation = ({ className }) => {
   const { t } = useTranslation('global');
+
+  const linkStyle = {
+    color: 'var(--subtitle-color)',
+  };
+
+  const activeLinkStyle = {
+    color: 'var(--main-color)',
+  };
 
   return (
     <ul className={className}>
-      <li>
-        <NavLink to="/"
-                 className='navigation__item'
-                 style={({isActive}) => ({color: isActive ? 'var(--main-color)' : 'var(--subtitle-color)'})}>
-                 {t('home')}
-        </NavLink>
-      </li>
-      <li>
-        <NavLink to="/projects"
-                 className='navigation__item'
-                 style={({isActive}) => ({color: isActive ? 'var(--main-color)' : 'var(--subtitle-color)'})}>
-          {t('projects')}
-        </NavLink>
-      </li>
-      <li>
-        <NavLink to="/about"
-                 className='navigation__item'
-                 style={({isActive}) => ({color: isActive ? 'var(--main-color)' : 'var(--subtitle-color)'})}>
-          {t('about')}
-        </NavLink>
-      </li>
-      <li>
-        <NavLink to="/resume"
-                 className='navigation__item'
-                 style={({isActive}) => ({color: isActive ? 'var(--main-color)' : 'var(--subtitle-color)'})}>
-          {t('resume')}
-        </NavLink>
-      </li>
+      {navigationLinks.map((link, index) => (
+        <li key={index}>
+          <NavLink
+            to={link.to}
+            className="navigation__item"
+            isActive={(match) => match !== null}
+            style={({ isActive }) => (isActive ? activeLinkStyle : linkStyle)}>
+            {t(link.label)}
+          </NavLink>
+        </li>
+      ))}
     </ul>
   );
 };
 
 Navigation.propTypes = {
   className: PropTypes.string.isRequired,
-}
+};
 
 export default Navigation;
