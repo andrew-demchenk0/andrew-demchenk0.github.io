@@ -23,8 +23,8 @@ const Navigation = ({ className }) => {
           <NavLink
             to={link.to}
             className="navigation__item"
-            isActive={(match) => match !== null}
-            style={({ isActive }) => (isActive ? activeLinkStyle : linkStyle)}>
+            style={({ isActive }) => (isActive ? activeLinkStyle : linkStyle)}
+          >
             {t(link.label)}
           </NavLink>
         </li>
