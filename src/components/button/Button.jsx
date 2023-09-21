@@ -1,14 +1,11 @@
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
-import { AiFillGithub } from 'react-icons/ai';
-import { LuView } from 'react-icons/lu';
-import { BiCloudDownload } from 'react-icons/bi';
 
 import './button.scss';
 
 const Button = props => {
-  const { className, link, download } = props;
+  const { className, icon, link, download } = props;
   const { t } = useTranslation('global');
 
   return (
@@ -21,21 +18,21 @@ const Button = props => {
       <button className={className}>
         {className.includes('button__github') && (
           <>
-            <div className="button__icon"><AiFillGithub/></div>
+            <div className="button__icon">{icon}</div>
             {t('button.github')}
           </>
         )}
 
         {className.includes('button__view') && (
           <>
-            <div className="button__icon"><LuView/></div>
+            <div className="button__icon">{icon}</div>
             {t('button.view')}
           </>
         )}
 
         {className.includes('button__download') && (
           <>
-            <div className="button__icon"><BiCloudDownload/></div>
+            <div className="button__icon">{icon}</div>
             {t('button.download')}
           </>
         )}
@@ -50,6 +47,7 @@ Button.propTypes = {
   className: PropTypes.string.isRequired,
   link: PropTypes.string,
   download: PropTypes.string,
+  icon: PropTypes.element,
 };
 
 export default Button;

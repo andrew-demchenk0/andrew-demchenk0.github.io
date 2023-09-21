@@ -9,6 +9,8 @@ import { HiChevronDoubleDown, HiOutlineArrowNarrowLeft } from 'react-icons/hi';
 import { FaCss3Alt, FaHtml5, FaPhp, FaReact, FaSass } from 'react-icons/fa';
 import { BiLogoJavascript, BiLogoRedux, BiLogoTypescript } from 'react-icons/bi';
 import { TbApi } from 'react-icons/tb';
+import { LuView } from 'react-icons/lu';
+import { AiFillGithub } from 'react-icons/ai';
 import { SiI18Next } from 'react-icons/si';
 
 import './project.scss';
@@ -57,8 +59,8 @@ const Project = () => {
             </ul>
             <hr className="project__divider"/>
             <div className="project__buttons">
-              <Button className={'button button__view'} link={project.view}/>
-              <Button className={'button button__github'} link={project.github}/>
+              <Button className={'button button__view'} icon={<LuView/>} link={project.view}/>
+              <Button className={'button button__github'} icon={<AiFillGithub/>} link={project.github}/>
             </div>
             <HiChevronDoubleDown className="project__scroll"/>
           </div>

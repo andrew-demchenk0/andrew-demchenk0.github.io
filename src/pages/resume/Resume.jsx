@@ -1,11 +1,29 @@
-import './resume.scss';
-import PhotoHome from 'assets/images/photo-home.jpeg';
-import ResumeTile from 'components/tiles/components/ResumeTile.jsx';
 import { useTranslation } from 'react-i18next';
+import ResumeTile from 'components/tiles/components/ResumeTile.jsx';
+
+import PhotoHome from 'assets/images/photo-home.jpeg';
 import ResumePDF from 'public/resume-file.pdf';
+
+import { BiCloudDownload } from 'react-icons/bi';
+
+import './resume.scss';
 
 const Resume = () => {
   const { t } = useTranslation('global');
+
+  const buttons = [
+    {
+      className: 'button button__contact',
+      link: 'mailto:2andrew.demchenko@gmail.com',
+      text: t('button.contactMe'),
+    },
+    {
+      className: 'button button__download',
+      link: ResumePDF,
+      icon: <BiCloudDownload />,
+      download: 'Resume EN | Demchenko Andrii',
+    },
+  ];
 
   return (
     <section className='resume'>
@@ -16,11 +34,7 @@ const Resume = () => {
           alt={'author avatar'}
           title={t('footer.author')}
           subtitle={t('aboutPage.greeting.subtitle')}
-          buttonClassName={'button button__contact'}
-          buttonLink={'mailto: 2andrew.demchenko@gmail.com'}
-          buttonClassName2={'button button__download'}
-          buttonLink2={ResumePDF}
-          download={'Resume EN | Demchenko Andrii'}
+          buttons={buttons}
         />
       </div>
       <div className='resume__info'>

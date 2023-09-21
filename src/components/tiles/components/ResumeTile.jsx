@@ -8,11 +8,7 @@ const ResumeTile = props => {
     alt,
     title,
     subtitle,
-    buttonClassName,
-    buttonLink,
-    buttonClassName2,
-    buttonLink2,
-    download,
+    buttons,
   } = props;
   return (
     <div className={className}>
@@ -21,8 +17,15 @@ const ResumeTile = props => {
       </div>
       <h2 className="tile__title">{title}</h2>
       <h1 className="tile__subtitle-special">{subtitle}</h1>
-      <Button className={buttonClassName} link={buttonLink}/>
-      <Button className={buttonClassName2} link={buttonLink2} download={download}/>
+      {buttons.map((button, index) => (
+        <Button
+          key={index}
+          className={button.className}
+          link={button.link}
+          icon={button.icon}
+          download={button.download}
+        />
+      ))}
     </div>
   );
 };
@@ -33,11 +36,14 @@ ResumeTile.propTypes = {
   alt: PropTypes.string,
   title: PropTypes.string,
   subtitle: PropTypes.string,
-  buttonClassName: PropTypes.string,
-  buttonLink: PropTypes.string,
-  buttonClassName2: PropTypes.string,
-  buttonLink2: PropTypes.string,
-  download: PropTypes.string,
+  buttons: PropTypes.arrayOf(
+    PropTypes.shape({
+      className: PropTypes.string.isRequired,
+      link: PropTypes.string.isRequired,
+      icon: PropTypes.element,
+      download: PropTypes.string,
+    })
+  ),
 };
 
 export default ResumeTile;
