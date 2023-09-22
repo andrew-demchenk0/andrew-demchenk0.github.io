@@ -10,6 +10,8 @@
   justify-content: flex-end;
   gap: 20px;
 
+  background: rgba( 255, 255, 255, 0.05 );
+  backdrop-filter: blur( 3px );
   &-icon__tile {
     align-items: center;
     justify-content: center;

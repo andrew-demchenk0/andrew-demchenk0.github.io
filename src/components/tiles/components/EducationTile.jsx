@@ -15,6 +15,8 @@ const EducationTile = props => {
         <p className="tile__description">{description}</p>
         {linkTo ? linkIcon : null}
       </div>
+      <span className="tile-border1"></span>
+      <span className="tile-border1"></span>
     </NavLink>
   );
 };

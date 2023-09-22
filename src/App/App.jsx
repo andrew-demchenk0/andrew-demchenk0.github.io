@@ -1,12 +1,11 @@
 import { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import ScrollToTop from 'utils/scrollToTop.js';
-
-import 'animate.css';
-import 'styles/styles.scss';
 
 import Header from 'components/header/Header.jsx';
 import Footer from 'components/footer/Footer.jsx';
+
+import ScrollToTop from 'utils/scrollToTop.js';
+import CursorEffect from 'components/CursorEffect/CursorEffect.jsx';
 
 import Home from 'pages/home/Home.jsx';
 import About from 'pages/about/About.jsx';
@@ -16,11 +15,14 @@ import Resume from 'pages/resume/Resume.jsx';
 import Page404 from 'pages/404/404.jsx';
 import Education from 'pages/education/Education.jsx';
 
+import 'animate.css';
+import 'styles/styles.scss';
 
 function App() {
   return (
     <Router>
       <div className="app">
+        <CursorEffect/>
         <ScrollToTop/>
         <Header/>
         <main>
