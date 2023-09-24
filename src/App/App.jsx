@@ -7,13 +7,13 @@ import Footer from 'components/footer/Footer.jsx';
 import ScrollToTop from 'utils/scrollToTop.js';
 import CursorEffect from 'components/CursorEffect/CursorEffect.jsx';
 
-import Home from 'pages/home/Home.jsx';
-import About from 'pages/about/About.jsx';
-import Projects from 'pages/projects/Projects.jsx';
-import Project from 'pages/single project/Project.jsx';
-import Resume from 'pages/resume/Resume.jsx';
-import Page404 from 'pages/404/404.jsx';
-import Education from 'pages/education/Education.jsx';
+const Home = lazy(() => import('pages/home/Home.jsx')) ;
+const Projects = lazy(() => import('pages/projects/Projects.jsx'));
+const Project = lazy(() => import('pages/single project/Project.jsx'));
+const About = lazy(() => import('pages/about/About.jsx'));
+const Education = lazy(() => import('pages/education/Education.jsx'));
+const Resume = lazy(() => import('pages/resume/Resume.jsx'));
+const Page404 = lazy(() => import('pages/404/404.jsx'));
 
 import 'animate.css';
 import 'styles/styles.scss';
