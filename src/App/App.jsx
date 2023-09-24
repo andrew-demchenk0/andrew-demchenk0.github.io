@@ -1,4 +1,4 @@
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Header from 'components/header/Header.jsx';
@@ -19,6 +19,7 @@ import 'animate.css';
 import 'styles/styles.scss';
 
 function App() {
+
   return (
     <Router>
       <div className="app">

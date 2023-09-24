@@ -13,7 +13,7 @@
 
 body {
   position: relative;
-
+  overflow-x: hidden;
   & ::selection,
   & ::-moz-selection {
     background: var(--main-color);
