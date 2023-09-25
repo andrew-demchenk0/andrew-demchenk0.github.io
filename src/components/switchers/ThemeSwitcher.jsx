@@ -15,7 +15,7 @@ const ThemeSwitcher = () => {
   };
 
   return (
-    <label className="switcher">
+    <label className="switcher js-cur-link">
       <input
         className="switcher__input"
         type="checkbox"

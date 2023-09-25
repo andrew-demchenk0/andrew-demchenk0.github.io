@@ -22,7 +22,7 @@ const Navigation = ({ className }) => {
         <li key={index}>
           <NavLink
             to={link.to}
-            className="navigation__item"
+            className="navigation__item js-cur-link"
             style={({ isActive }) => (isActive ? activeLinkStyle : linkStyle)}
           >
             {t(link.label)}

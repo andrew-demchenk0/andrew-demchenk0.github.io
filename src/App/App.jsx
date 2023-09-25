@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect } from 'react';
+import { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Header from 'components/header/Header.jsx';
@@ -6,6 +6,10 @@ import Footer from 'components/footer/Footer.jsx';
 
 import ScrollToTop from 'utils/scrollToTop.js';
 import CursorEffect from 'components/CursorEffect/CursorEffect.jsx';
+
+import 'animate.css';
+import 'styles/styles.scss';
+import CustomCursor from 'components/CursorEffect/CursorEffect.jsx';
 
 const Home = lazy(() => import('pages/home/Home.jsx')) ;
 const Projects = lazy(() => import('pages/projects/Projects.jsx'));
@@ -15,15 +19,12 @@ const Education = lazy(() => import('pages/education/Education.jsx'));
 const Resume = lazy(() => import('pages/resume/Resume.jsx'));
 const Page404 = lazy(() => import('pages/404/404.jsx'));
 
-import 'animate.css';
-import 'styles/styles.scss';
-
 function App() {
 
   return (
     <Router>
       <div className="app">
-        <CursorEffect/>
+        <CustomCursor/>
         <ScrollToTop/>
         <Header/>
         <main>

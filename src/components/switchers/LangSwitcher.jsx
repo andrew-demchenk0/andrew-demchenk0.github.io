@@ -12,7 +12,7 @@ const LangSwitcher = () => {
   };
 
   return (
-    <label className="switcher">
+    <label className="switcher js-cur-link">
       <input
         type="checkbox"
         className="switcher__input"
