@@ -7,14 +7,15 @@
   gap: 10px;
   align-items: center;
   padding: 10px 20px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid var(--title-color);
   border-radius: 2px;
-  box-shadow: 2px 2px #EEEEEE;
+  box-shadow: 2px 2px var(--title-color);
   background: transparent;
-  color: #EEEEEE;
+  color: var(--title-color);
   overflow: hidden;
   font-size: $description;
   white-space: nowrap;
+
   &:before {
     content: '';
     width: 120%;
@@ -27,22 +28,40 @@
     transform: skewX(-20deg);
     transition: all 0.5s;
   }
+
   &:hover:before {
     left: -10%;
   }
+
   &:hover,
   &:hover > &__icon {
     color: #222222;
   }
+
   &:active {
     box-shadow: 0 var(--bg-color);
     transform: translate(2px, 2px);
   }
+
   &__icon {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 20px;
+    color: var(--title-color);
+  }
+
+  &-project {
+    border: 1px solid #EEEEEE;
+    box-shadow: 2px 2px #EEEEEE;
     color: #EEEEEE;
+
+    &:before {
+      background: #EEEEEE;
+    }
+
+    &__icon {
+      color: #EEEEEE;
+    }
   }
 }

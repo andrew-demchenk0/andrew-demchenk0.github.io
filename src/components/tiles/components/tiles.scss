@@ -8,17 +8,20 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
+  border-bottom: 2px solid transparent;
   gap: 20px;
 
-  background: rgba( 255, 255, 255, 0.05 );
-  backdrop-filter: blur( 3px );
+  background: rgba(var(--bg-tile), $opacity007);
+  backdrop-filter: blur( 2px );
+  &:hover {
+    text-decoration: none;
+    background: rgba(var(--bg-tile), $opacity01);
+    border-bottom: 2px solid rgba(var(--secondary-color), $opacity05);
+  }
+
   &-icon__tile {
     align-items: center;
     justify-content: center;
-  }
-
-  &:hover {
-    text-decoration: none;
   }
 
   &:hover .tile__link-icon {

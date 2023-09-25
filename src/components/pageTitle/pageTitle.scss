@@ -7,13 +7,16 @@
     font-size: $heading-title;
     text-align: center;
     white-space: nowrap;
-    color: var(--bg-lighter-color);
+    color: rgba(var(--bg-tile), $opacity007);
     -webkit-text-stroke: 1px var(--main-color);
     overflow: hidden;
     line-height: 1;
     place-content: center space-evenly;
     display: flex;
     letter-spacing: -2px;
+    &:hover {
+      color: rgba(var(--bg-tile), $opacity01);
+    }
   }
 }
 

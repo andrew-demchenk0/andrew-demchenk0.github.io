@@ -59,8 +59,8 @@ const Project = () => {
             </ul>
             <hr className="project__divider"/>
             <div className="project__buttons">
-              <Button className={'button button__view'} icon={<LuView/>} link={project.view}/>
-              <Button className={'button button__github'} icon={<AiFillGithub/>} link={project.github}/>
+              <Button className={'button button-project button__view'} icon={<LuView/>} link={project.view}/>
+              <Button className={'button button-project button__github'} icon={<AiFillGithub/>} link={project.github}/>
             </div>
             <HiChevronDoubleDown className="project__scroll"/>
           </div>

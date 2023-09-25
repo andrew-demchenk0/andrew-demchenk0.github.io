@@ -18,14 +18,14 @@ const Button = props => {
       <button className={className}>
         {className.includes('button__github') && (
           <>
-            <div className="button__icon">{icon}</div>
+            <div className="button__icon button-project__icon">{icon}</div>
             {t('button.github')}
           </>
         )}
 
         {className.includes('button__view') && (
           <>
-            <div className="button__icon">{icon}</div>
+            <div className="button__icon button-project__icon">{icon}</div>
             {t('button.view')}
           </>
         )}
