@@ -5,11 +5,11 @@ import Header from 'components/header/Header.jsx';
 import Footer from 'components/footer/Footer.jsx';
 
 import ScrollToTop from 'utils/scrollToTop.js';
-import CursorEffect from 'components/CursorEffect/CursorEffect.jsx';
+import CursorEffect from 'components/CustomCursor/CustomCursor.jsx';
 
 import 'animate.css';
 import 'styles/styles.scss';
-import CustomCursor from 'components/CursorEffect/CursorEffect.jsx';
+import CustomCursor from 'components/CustomCursor/CustomCursor.jsx';
 
 const Home = lazy(() => import('pages/home/Home.jsx')) ;
 const Projects = lazy(() => import('pages/projects/Projects.jsx'));
