@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import ResumeTile from 'components/tiles/components/ResumeTile.jsx';
 
-import PhotoHome from 'assets/images/photo-home.jpeg';
+import PhotoHome from 'assets/images/photo-home.webp';
 import ResumePDF from 'public/resume-file.pdf';
 
 import { BiCloudDownload } from 'react-icons/bi';

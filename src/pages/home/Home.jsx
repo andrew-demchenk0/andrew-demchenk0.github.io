@@ -11,7 +11,7 @@ import IconTextTileLink from 'components/tiles/components/IconTextTileLink.jsx';
 import ImageTextTileLink from 'components/tiles/components/ImageTextTileLink.jsx';
 import WhatIDo from 'components/tiles/components/WhatIDo.jsx';
 
-import PhotoHome from 'assets/images/photo-home.jpeg';
+import PhotoHome from 'assets/images/photo-home.webp';
 
 import './home.scss';
 

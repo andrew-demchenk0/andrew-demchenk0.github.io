@@ -10,7 +10,7 @@ import TextTile from 'components/tiles/components/TextTile.jsx';
 import TextTileLink from 'components/tiles/components/TextTileLink.jsx';
 import IconTextTileLink from 'components/tiles/components/IconTextTileLink.jsx';
 
-import PhotoAbout from 'assets/images/photo-about.jpeg';
+import PhotoAbout from 'assets/images/photo-about.webp';
 
 import './about.scss';
 
