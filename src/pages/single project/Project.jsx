@@ -14,6 +14,7 @@ import { AiFillGithub } from 'react-icons/ai';
 import { SiI18Next } from 'react-icons/si';
 
 import './project.scss';
+import button from 'components/button/Button.jsx';
 
 const Project = () => {
   const { t } = useTranslation('global');
@@ -59,8 +60,14 @@ const Project = () => {
             </ul>
             <hr className="project__divider"/>
             <div className="project__buttons">
-              <Button className={'button button-project button__view'} icon={<LuView/>} link={project.view}/>
-              <Button className={'button button-project button__github'} icon={<AiFillGithub/>} link={project.github}/>
+              <Button className={'button button-project button__view'}
+                      icon={<LuView/>}
+                      text={t('button.view')}
+                      link={project.view}/>
+              <Button className={'button button-project button__github'}
+                      icon={<AiFillGithub/>}
+                      text={t('button.github')}
+                      link={project.github}/>
             </div>
             <HiChevronDoubleDown className="project__scroll"/>
           </div>

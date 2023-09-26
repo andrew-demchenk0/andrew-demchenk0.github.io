@@ -16,7 +16,7 @@
   &:hover {
     text-decoration: none;
     background: rgba(var(--bg-tile), $opacity01);
-    border-bottom: 2px solid rgba(var(--secondary-color), $opacity05);
+    border-bottom: 2px solid rgba(var(--secondary-color), $opacity08);
   }
 
   &-icon__tile {
@@ -65,6 +65,7 @@
     &-special {
       font-size: $title;
       color: var(--main-color);
+      white-space: nowrap;
     }
   }
 

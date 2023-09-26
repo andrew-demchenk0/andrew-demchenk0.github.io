@@ -23,6 +23,7 @@ const ResumeTile = props => {
           className={button.className}
           link={button.link}
           icon={button.icon}
+          text={button.text}
           download={button.download}
         />
       ))}
@@ -41,6 +42,7 @@ ResumeTile.propTypes = {
       className: PropTypes.string.isRequired,
       link: PropTypes.string.isRequired,
       icon: PropTypes.element,
+      text: PropTypes.string,
       download: PropTypes.string,
     })
   ),

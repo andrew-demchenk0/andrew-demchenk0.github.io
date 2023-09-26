@@ -3,10 +3,10 @@ import { NavLink } from 'react-router-dom';
 import './tiles.scss';
 
 const ProjectTile = props => {
-  const { className, image, alt, title, subtitle, linkIcon, linkTo } = props;
+  const { className, image, alt, title, subtitle, linkIcon, linkTo, target } = props;
 
   return (
-    <NavLink to={linkTo} className={className}>
+    <NavLink to={linkTo} target={target} className={className}>
       <div className="tile__image">
         <img src={image} alt={alt}/>
       </div>
@@ -27,6 +27,7 @@ ProjectTile.propTypes = {
   subtitle: PropTypes.string,
   linkIcon: PropTypes.object,
   linkTo: PropTypes.string,
+  target: PropTypes.string
 };
 
 export default ProjectTile;

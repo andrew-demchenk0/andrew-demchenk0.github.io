@@ -1,11 +1,13 @@
 {
   "h1": "Hello 👋, My name is Andrii. I`m studying to become a web developer",
-  "home": "Home",
-  "projects": "Projects",
-  "about": "About",
-  "resume": "Resume",
-  "techSkills": "Tech skills",
-  "goback": "Go back",
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "resume": "Resume",
+    "techSkills": "Tech skills",
+    "goback": "Go back"
+  },
   "footer": {
     "copyright": "Copyright © 2023 by ",
     "create": "Powered by ",
@@ -41,7 +43,11 @@
   "button": {
     "github": "View Source Code",
     "view": "View Project",
-    "contactMe": "Contact me"
+    "contactMe": "Contact me",
+    "download": {
+      "en": "Download resume EN",
+      "ua": "Download resume UA"
+    }
   },
   "project": {
     "skills": "Skills:",
@@ -118,5 +124,9 @@
         "subtitle": "Master's degree"
       }
     }
+  },
+  "resume": {
+    "about": "Hello! I'm a frontend developer who constantly strives for excellence in the exciting world of web development. My goal is to create efficient and user-friendly web applications that make users' lives easier and solve their tasks. I'm ready to collaborate with you and your team. Through teamwork and mutual learning, we can achieve more and make the web better for all users.",
+    "hobbie": "Click to view"
   }
 }

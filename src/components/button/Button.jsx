@@ -1,12 +1,10 @@
 import PropTypes from 'prop-types';
-import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 
 import './button.scss';
 
 const Button = props => {
-  const { className, icon, link, download } = props;
-  const { t } = useTranslation('global');
+  const { className, icon, link, download, text } = props;
 
   return (
     <NavLink
@@ -19,25 +17,25 @@ const Button = props => {
         {className.includes('button__github') && (
           <>
             <div className="button__icon button-project__icon">{icon}</div>
-            {t('button.github')}
+            {text}
           </>
         )}
 
         {className.includes('button__view') && (
           <>
             <div className="button__icon button-project__icon">{icon}</div>
-            {t('button.view')}
+            {text}
           </>
         )}
 
         {className.includes('button__download') && (
           <>
             <div className="button__icon">{icon}</div>
-            {t('button.download')}
+            {text}
           </>
         )}
 
-        {className.includes('button__contact') && t('button.contactMe')}
+        {className.includes('button__contact') && text}
       </button>
     </NavLink>
   );
@@ -48,6 +46,7 @@ Button.propTypes = {
   link: PropTypes.string,
   download: PropTypes.string,
   icon: PropTypes.element,
+  text: PropTypes.string
 };
 
 export default Button;

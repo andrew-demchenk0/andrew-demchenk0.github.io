@@ -9,9 +9,87 @@
 
   &__aside {
     width: fit-content;
-    position: sticky;
   }
 
   &__info {
+    &-title {
+      color: var(--title-color);
+      font-size: $title;
+      margin-bottom: $default-size20;
+    }
+
+    &-subtitle {
+      color: var(--subtitle-color);
+      font-size: $subtitle;
+      margin-bottom: $size10;
+
+      span {
+        color: var(--main-color)
+      }
+    }
+
+    &-descr {
+      color: var(--subtitle-color);
+      font-size: $description;
+      margin-bottom: $default-size20;
+
+      ul {
+        list-style-type: circle;
+
+        li {
+          margin-bottom: $size5;
+
+          &:before {
+            content: '◦';
+            color: var(--main-color);
+            font-size: $subtitle;
+            margin-right: $size5;
+          }
+
+        }
+      }
+    }
+
+    &-img {
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &-link {
+      margin-left: $default-size20;
+    }
+  }
+}
+
+.two-column-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+
+.two-column-list li {
+  width: 48%;
+}
+
+@media screen and (max-width: 768px) {
+  .two-column-list li {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .resume {
+    flex-direction: column;
+
+    &__aside {
+      width: 100%;
+    }
   }
 }
