@@ -49,7 +49,7 @@ const Resume = () => {
           buttons={buttons}
         />
       </div>
-      <div className="resume__info">
+      <div className="resume__info animate__animated  animate__slideInDown">
         <h3 className="resume__info-title">About me</h3>
         <p className="resume__info-descr">{t('resume.about')}</p>
 
