@@ -4,7 +4,7 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: $size10;
   align-items: center;
   padding: 10px 20px;
   border: 1px solid var(--title-color);

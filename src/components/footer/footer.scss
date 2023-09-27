@@ -7,19 +7,19 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: $default-size;
 
   &__nav {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: $default-size;
     align-items: center;
   }
 
   &__info {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: $default-size;
 
     &-item {
       color: var(--subtitle-color);
@@ -46,6 +46,7 @@
     &__nav {
       flex-direction: column;
     }
+
     &__info {
       flex-direction: column;
       align-items: center;

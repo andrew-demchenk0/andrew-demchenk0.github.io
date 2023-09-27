@@ -2,14 +2,14 @@
 
 .tile {
   position: relative;
-  padding: 20px;
+  padding: $default-size;
   background: var(--bg-lighter-color);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
   border-bottom: 2px solid transparent;
-  gap: 20px;
+  gap: $default-size;
 
   background: rgba(var(--bg-tile), $opacity007);
   backdrop-filter: blur( 2px );
@@ -42,7 +42,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: flex-end;
-      gap: 20px;
+      gap: $default-size;
       font-size: $tile-icon;
       color: var(--main-color);
     }
@@ -158,8 +158,8 @@
 
     &__absolute {
       position: absolute;
-      bottom: 20px;
-      right: 20px;
+      bottom: $default-size;
+      right: $default-size;
     }
   }
 }
@@ -169,7 +169,7 @@
     &__wrp {
       flex-direction: column;
       align-items: flex-start;
-      gap: 20px;
+      gap: $default-size;
       &-item {
         flex-direction: row;
       }

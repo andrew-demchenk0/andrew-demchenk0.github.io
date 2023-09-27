@@ -3,10 +3,10 @@
 .socials {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: $default-size;
 
   &-item {
-    font-size: 20px;
+    font-size: $default-size;
     color: var(--subtitle-color);
 
     &:hover {

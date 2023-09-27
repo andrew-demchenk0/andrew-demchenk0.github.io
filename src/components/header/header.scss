@@ -22,10 +22,10 @@
   &__wrapper {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: $size10;
     &-mobile {
       justify-content: center;
-      margin-top: 10px;
+      margin-top: $size10;
     }
   }
 

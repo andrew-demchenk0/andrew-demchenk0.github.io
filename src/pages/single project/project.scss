@@ -1,25 +1,29 @@
 @import 'src/styles/variables';
 
 .project {
-  padding: 20px;
+  padding: $default-size;
   margin-top: 60px;
   position: relative;
+
   &__info {
     position: relative;
     height: calc(100vh - 100px);
     width: 100%;
+
     &-bg {
       width: 100%;
       height: 100%;
       z-index: 1;
+
       img {
         width: 100%;
         height: 100%;
         object-position: center center;
         object-fit: cover;
       }
+
       &:after {
-        content: "";
+        content: '';
         position: absolute;
         z-index: 2;
         top: 0;
@@ -29,6 +33,7 @@
         background: rgba(0, 0, 0, 0.8);
       }
     }
+
     &-content {
       top: 0;
       left: 0;
@@ -42,55 +47,64 @@
       justify-content: flex-end;
     }
   }
+
   &__back {
     margin-bottom: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: $size10;
     color: #EEEEEEFF;
     font-weight: 500;
     letter-spacing: 1px;
     font-size: $navigation-link;
     max-width: 110px;
+
     &-arrow {
       font-size: $title;
     }
+
     &:hover {
       color: var(--main-color);
+
       .project__back-arrow {
         transform: translateX(-5px);
       }
     }
   }
+
   &__subtitle {
     color: #C7C7C7;
-    margin-bottom: 20px;
+    margin-bottom: $default-size;
     font-size: $subtitle;
   }
+
   &__title {
     color: #EEEEEEFF;
-    margin-bottom: 20px;
+    margin-bottom: $default-size;
     font-size: $title;
   }
+
   &__description {
     color: #C7C7C7;
-    margin-bottom: 20px;
+    margin-bottom: $default-size;
     font-size: $description;
   }
+
   &__skills {
     font-size: $subtitle;
     color: #EEEEEEFF;
-    margin-bottom: 20px;
+    margin-bottom: $default-size;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: $size10;
+
     li {
       color: #EEEEEE;
       cursor: pointer;
-      //font-size: 30px;
       font-size: $skill-icons;
+
       &:hover {
         color: var(--main-color);
       }
@@ -98,17 +112,20 @@
 
 
   }
+
   &__divider {
     border: 1px solid #EEEEEEFF;
     height: 0.5px;
     border-radius: 100px;
   }
+
   &__buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+    gap: $default-size;
+    padding: $default-size;
   }
+
   &__scroll {
     height: 30px;
     width: 30px;
@@ -117,13 +134,15 @@
     color: #EEEEEE;
     animation: down 2s infinite;
   }
+
   &__images {
     display: flex;
     flex-direction: column;
     height: min-content;
     width: 100%;
+
     img {
-      margin-top: 20px;
+      margin-top: $default-size;
       height: min-content;
       width: 100%;
     }

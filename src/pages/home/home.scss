@@ -11,11 +11,11 @@
 
 .home {
   margin-top: 60px;
-  padding: 20px;
+  padding: $default-size;
   display: grid;
   grid-template-columns: repeat(4, minmax(200px, 1fr));
   grid-template-rows: repeat(3, minmax(200px, 1fr));
-  gap: 20px;
+  gap: $default-size;
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {

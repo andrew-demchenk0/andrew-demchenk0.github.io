@@ -3,7 +3,7 @@
 .navigation {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: $default-size;
 
   &__item {
     color: var(--title-color);
@@ -15,13 +15,16 @@
       text-decoration: underline;
     }
   }
+
   &__mobile {
     text-align: center;
     opacity: 0;
+
     .navigation__item {
       width: 100%;
-      padding: 10px;
+      padding: $size10;
     }
+
     &-wrapper {
       overflow: hidden;
       clear: both;
@@ -36,6 +39,7 @@
   height: 265px;
   padding: 15px 0;
   text-align: center;
+
   .navigation__mobile {
     opacity: 1;
   }
