@@ -1,16 +1,25 @@
 import { useState, useEffect, useRef } from 'react';
 import './customCursor.scss';
+import { useMediaQuery } from 'react-responsive';
 
 const CustomCursor = () => {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
   const cursorRef = useRef(null);
   const [cursorPosition, setCursorPosition] = useState({ left: 0, top: 0 });
-
-  const [hovered] = useState(false);
+  const [hovered, setHovered] = useState(false);
 
   const moveCursor = (e) => {
     requestAnimationFrame(() => {
       setCursorPosition({ left: e.clientX, top: e.clientY });
     });
+  };
+
+  const handleMouseEnter = () => {
+    setHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setHovered(false);
   };
 
   useEffect(() => {
@@ -20,29 +29,27 @@ const CustomCursor = () => {
     const elementsToTrack = document.querySelectorAll('.js-cur-link, a');
 
     elementsToTrack.forEach((element) => {
-      element.addEventListener('mouseenter', () => {
-        cursorRef.current.classList.add('on-link');
-      });
-
-      element.addEventListener('mouseleave', () => {
-        cursorRef.current.classList.remove('on-link');
-      });
+      element.addEventListener('mouseenter', handleMouseEnter);
+      element.addEventListener('mouseleave', handleMouseLeave);
     });
 
     return () => {
       window.removeEventListener('mousemove', moveCursor);
 
       elementsToTrack.forEach((element) => {
-        element.removeEventListener('mouseenter', () => {
-          cursorRef.current.classList.add('on-link');
-        });
-
-        element.removeEventListener('mouseleave', () => {
-          cursorRef.current.classList.remove('on-link');
-        });
+        element.removeEventListener('mouseenter', handleMouseEnter);
+        element.removeEventListener('mouseleave', handleMouseLeave);
       });
     };
   }, []);
+
+  useEffect(() => {
+    if (isMobile) {
+      cursorRef.current.style.display = 'none';
+    } else {
+      cursorRef.current.style.display = 'block';
+    }
+  }, [isMobile]);
 
   return (
     <div
@@ -59,4 +66,3 @@ const CustomCursor = () => {
 };
 
 export default CustomCursor;
-
