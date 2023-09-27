@@ -1,4 +1,6 @@
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
+
 import { FaLinkedin, FaUniversity } from 'react-icons/fa';
 import { TbCircleArrowRight } from 'react-icons/tb';
 import { BsPersonVcard } from 'react-icons/bs';
@@ -19,6 +21,13 @@ const About = () => {
 
   return (
     <>
+      <Helmet>
+        <meta
+          name="description"
+          content={t('pageTitle.about')}
+        />
+        <title>🧑🏻‍💻 {t('pageTitle.about')}</title>
+      </Helmet>
       <PageTitle text={t('pageTitle.about')} className="page-title animate__animated animate__fadeInDown"/>
       <section className="about">
         <ImageTile className="tile__image-photo about-1 animate__animated  animate__slideInLeft"

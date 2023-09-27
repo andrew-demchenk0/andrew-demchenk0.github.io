@@ -1,16 +1,19 @@
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
+
 import ResumeTile from 'components/tiles/components/ResumeTile.jsx';
+import ProjectTile from 'components/tiles/components/ProjectTile.jsx';
 
 import PhotoHome from 'assets/images/photo-home.webp';
 import HobbieIMG from 'assets/images/uiverse.webp';
 import ResumePDFen from 'public/resume-file.pdf';
 import ResumePDFua from 'public/resume-file.pdf';
-import { BiCloudDownload } from 'react-icons/bi';
 
+import { BiCloudDownload } from 'react-icons/bi';
 import { TbCircleArrowRight } from 'react-icons/tb';
-import './resume.scss';
+
 import 'pages/404/404.scss';
-import ProjectTile from 'components/tiles/components/ProjectTile.jsx';
+import './resume.scss';
 
 const Resume = () => {
   const { t } = useTranslation('global');
@@ -39,6 +42,13 @@ const Resume = () => {
 
   return (
     <section className="resume">
+      <Helmet>
+        <meta
+          name="description"
+          content={t('nav.resume')}
+        />
+        <title>📝 {t('nav.resume')}</title>
+      </Helmet>
       <div className="resume__aside">
         <ResumeTile
           className={'tile animate__animated  animate__slideInLeft'}

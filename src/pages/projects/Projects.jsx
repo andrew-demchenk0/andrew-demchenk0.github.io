@@ -1,4 +1,6 @@
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
+
 import { projects } from 'pages/projects/helper/projectsList.js';
 
 import PageTitle from 'components/pageTitle/PageTitle.jsx';
@@ -13,6 +15,13 @@ const Projects = () => {
 
   return (
     <>
+      <Helmet>
+        <meta
+          name="description"
+          content={t('pageTitle.projects')}
+        />
+        <title>💼 {t('nav.projects')}</title>
+      </Helmet>
       <PageTitle text={t('pageTitle.projects')} className="page-title animate__animated animate__fadeInDown"/>
       <section className="projects">
         {projects.map(project => {

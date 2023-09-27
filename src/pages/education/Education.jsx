@@ -1,4 +1,6 @@
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
+
 import { diplomas } from 'pages/education/helper/diplomasList.js';
 import { certificates } from 'pages/education/helper/certificatesList.js';
 
@@ -13,6 +15,13 @@ const Education = () => {
   const { t } = useTranslation('global');
   return (
     <>
+      <Helmet>
+        <meta
+          name="description"
+          content={t('pageTitle.education')}
+        />
+        <title>📚 {t('pageTitle.education')}</title>
+      </Helmet>
       <PageTitle text={t('pageTitle.education')} className="page-title animate__animated animate__fadeInDown"/>
       <section className="education">
         <h2 className="education__title">{t('education.diplomas')}</h2>

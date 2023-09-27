@@ -1,5 +1,7 @@
 import { NavLink, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
+
 import { projects } from 'pages/projects/helper/projectsList.js';
 
 import Button from 'components/button/Button.jsx';
@@ -14,7 +16,6 @@ import { AiFillGithub } from 'react-icons/ai';
 import { SiI18Next } from 'react-icons/si';
 
 import './project.scss';
-import button from 'components/button/Button.jsx';
 
 const Project = () => {
   const { t } = useTranslation('global');
@@ -28,6 +29,13 @@ const Project = () => {
 
   return (
     <section className="project">
+      <Helmet>
+        <meta
+          name="description"
+          content={t(project.description)}
+        />
+        <title>🏞️ {t(project.title)}</title>
+      </Helmet>
       <div className="project__info">
         <div className="project__info-bg">
           <img src={project.background} alt={t(project.title)}/>

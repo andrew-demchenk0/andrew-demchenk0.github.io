@@ -1,5 +1,8 @@
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
+
 import { projects } from 'pages/projects/helper/projectsList.js';
+
 import { TbCircleArrowRight } from 'react-icons/tb';
 import { FaLinkedin } from 'react-icons/fa';
 import { BsPersonVcard } from 'react-icons/bs';
@@ -18,11 +21,18 @@ import './home.scss';
 const Home = () => {
   const { t } = useTranslation('global');
   const marvel = projects[1],
-        movie = projects[3],
-        travel = projects[2];
+    movie = projects[3],
+    travel = projects[2];
 
   return (
     <section className="home">
+      <Helmet>
+        <meta
+          name="description"
+          content="Homepage of my portfolio site"
+        />
+        <title>🏠 {t('nav.home')}</title>
+      </Helmet>
       <ImageTextTileLink className={'tile home-1 animate__animated  animate__slideInLeft'}
                          image={PhotoHome}
                          alt={'author avatar'}
