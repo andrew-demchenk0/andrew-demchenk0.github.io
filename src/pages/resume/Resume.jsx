@@ -6,8 +6,8 @@ import ProjectTile from 'components/tiles/components/ProjectTile.jsx';
 
 import PhotoHome from 'assets/images/photo-home.webp';
 import HobbieIMG from 'assets/images/uiverse.webp';
-import ResumePDFen from 'public/resume-file.pdf';
-import ResumePDFua from 'public/resume-file.pdf';
+import ResumeEN from 'public/resume-en.pdf';
+import ResumeUA from 'public/resume-ua.pdf';
 
 import { BiCloudDownload } from 'react-icons/bi';
 import { TbCircleArrowRight } from 'react-icons/tb';
@@ -26,14 +26,14 @@ const Resume = () => {
     },
     {
       className: 'button button__download',
-      link: ResumePDFen,
+      link: ResumeEN,
       text: t('button.download.en'),
       icon: <BiCloudDownload/>,
       download: 'Resume EN | Demchenko Andrii',
     },
     {
       className: 'button button__download',
-      link: ResumePDFua,
+      link: ResumeUA,
       text: t('button.download.ua'),
       icon: <BiCloudDownload/>,
       download: 'Resume UA | Demchenko Andrii',
