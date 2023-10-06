@@ -1,1 +1,0 @@
-import{P as s,j as i}from"./index-7f0efa2c.js";const a=e=>{const{text:t,className:r}=e;return i.jsx("h1",{className:r,children:t})};a.propTypes={text:s.string.isRequired,className:s.string.isRequired};export{a as P};
