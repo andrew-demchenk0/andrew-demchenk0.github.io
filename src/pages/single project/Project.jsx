@@ -28,7 +28,7 @@ const Project = () => {
   }
 
   return (
-    <section className="project">
+    <section className="project animate__animated animate__slideInUp">
       <Helmet>
         <meta
           name="description"
