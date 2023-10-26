@@ -17,6 +17,7 @@
     text-decoration: none;
     background: rgba(var(--bg-tile), $opacity01);
     border-bottom: 2px solid rgba(var(--secondary-color), $opacity08);
+    transition: all 0.15s;
   }
 
   &-icon__tile {
@@ -155,6 +156,7 @@
     font-size: $arrow-icon-link;
     color: var(--subtitle-color);
     transform: rotate(-45deg);
+    transition: all 0.3s;
 
     &__absolute {
       position: absolute;
