@@ -7,7 +7,6 @@ import ProjectTile from 'components/tiles/components/ProjectTile.jsx';
 import PhotoHome from 'assets/images/photo-home.webp';
 import HobbieIMG from 'assets/images/uiverse.webp';
 import ResumeEN from 'public/resume-en.pdf';
-import ResumeUA from 'public/resume-ua.pdf';
 
 import { BiCloudDownload } from 'react-icons/bi';
 import { TbCircleArrowRight } from 'react-icons/tb';
@@ -30,13 +29,6 @@ const Resume = () => {
       text: t('button.download.en'),
       icon: <BiCloudDownload/>,
       download: 'Resume EN | Demchenko Andrii',
-    },
-    {
-      className: 'button button__download',
-      link: ResumeUA,
-      text: t('button.download.ua'),
-      icon: <BiCloudDownload/>,
-      download: 'Resume UA | Demchenko Andrii',
     },
   ];
 
